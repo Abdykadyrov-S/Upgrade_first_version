@@ -1,0 +1,274 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'include/header.html' %}
+
+    <div class="nft_details__style pt-60 bg-body-2 section_gap_y_bottom__1">
+        <div class="container">
+            <br>
+            <div class="row gx-7 gy-4 position-relative justify-content-between">
+                <div class="col-lg-7 col-sm-10 col-12">
+                    <div class="nft_details__img">
+                        <img src="{{product.image.url}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="nft__details">
+                        <div class="nd__header">
+                            <div class="nd__title">
+                                <h3 class="nft__title">{{product.title}}</h3>
+                            </div>
+                        </div>
+
+                        <div class="nd_disc__text">
+                            <p>{{ product.description|safe }}</p>
+                        </div>
+                        <div class="nd__status">
+
+                            <div class="nft__price">
+                                <div class="d-flex align-items-center">
+                                    <h4>{{product.price}} сом</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bid__btn pt-20">
+                            <a href="https://wa.me/{{settings.phone}}/?text=Здравствуйте, меня интересует {{product.title}}. Можем ли мы обсудить детали?" class="btn-rounded-v6">Купить</a>
+                        </div>
+
+                        <div class="accordion-item nd_single__block author__details mt-40">
+                            <h2 class="accordion-header sidebar__header" id="blockHeadingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#block-collapseOne" aria-expanded="true">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.16992 1H16.0032" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.16992 6H16.0032" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.16992 11H16.0032" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 1H1.01111" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 6H1.01111" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 11H1.01111" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                    <span>Status</span>
+                                </button>
+                            </h2>
+                            <div id="block-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="blockHeadingOne">
+                                <div class="accordion-body sidebar__body">
+                                    <h5 class="author_dtitle">Owner</h5>
+                                    <div class="author">
+                                        <div class="avater">
+                                            <img src="{% static 'assets/images/nft/d-author.png' %}" alt="" class="author__img">
+                                            <img src="{% static 'assets/images/icons/tick-blue.svg' %}" alt="" class="tick">
+                                        </div>
+                                        <h6>Eric Widget</h6>
+                                    </div>
+
+
+                                    <h5 class="author_dtitle mt-20">Properties</h5>
+                                    <div class="row gx-2 gy-2">
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Mouth</span>
+                                                <h5>Ambivalent</h5>
+                                                <p>27.3% rarity</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Background</span>
+                                                <h5>Sweatband</h5>
+                                                <p>7.4% rarity</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Eye</span>
+                                                <h5>Moody</h5>
+                                                <p>27.7% rarity</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Facial Hair</span>
+                                                <h5>Brown Beard</h5>
+                                                <p>0.9% rarity</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Head</span>
+                                                <h5>Regular</h5>
+                                                <p>90.3% rarity</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Hair & Hats</span>
+                                                <h5>Casual Purple</h5>
+                                                <p>1.6% rarity</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item nd_single__block author__details mt-40">
+                            <h2 class="accordion-header sidebar__header" id="blockHeadingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#block-collapseTwo" aria-expanded="true">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.0061 13.9946L12.0195 10.0081" stroke="currentColor"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12.0181 10.0081L9.16707 12.8591C8.53888 13.4873 7.51606 13.4873 6.88787 12.8591L3.47309 9.4443C2.84491 8.81611 2.84491 7.7933 3.47309 7.16511L9.16707 1.47114C9.79526 0.842953 10.8181 0.842953 11.4463 1.47114L14.861 4.88593C15.4892 5.51412 15.4892 6.53693 14.861 7.16511L12.0181 10.0081Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.5 16H6.33222" stroke="currentColor" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.17383 5.46582L10.8678 11.1598" stroke="currentColor"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+
+                                    <span>Bids</span>
+                                </button>
+                            </h2>
+                            <div id="block-collapseTwo" class="accordion-collapse collapse show"
+                                aria-labelledby="blockHeadingTwo">
+                                <div class="accordion-body sidebar__body">
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="{% static 'assets/images/nft/nd-a-one.png' %}" alt="" class="bidder__img">
+                                            <img src="{% static 'assets/images/icons/tick-blue-m.svg' %}" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.83 ETH</span></h5>
+                                            <p>by <span>Tsuki Genesis</span> 1 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="{% static 'assets/images/nft/nd-a-two.png' %}" alt="" class="bidder__img">
+                                            <img src="{% static 'assets/images/icons/tick-blue-m.svg' %}" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.23 ETH</span></h5>
+                                            <p>by <span>Jahid Hassan</span> 10 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="{% static 'assets/images/nft/nd-a-three.png' %}" alt="" class="bidder__img">
+                                            <img src="{% static 'assets/images/icons/tick-blue-m.svg' %}" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.78 ETH</span></h5>
+                                            <p>by <span> Norman Gordon</span> 1 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="{% static 'assets/images/nft/nd-a-four.png' %}" alt="" class="bidder__img">
+                                            <img src="{% static 'assets/images/icons/tick-blue-m.svg' %}" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.12 ETH</span></h5>
+                                            <p>by <span>Tsuki Genesis</span> 2 days ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item nd_single__block author__details mt-40">
+                            <h2 class="accordion-header sidebar__header" id="blockHeadingThree">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#block-collapseThree" aria-expanded="true">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.0568 7.68481L17.2315 11.2047C16.5242 14.2445 15.1264 15.474 12.4991 15.2213C12.0781 15.1877 11.6233 15.1119 11.1349 14.994L9.72027 14.6571C6.20883 13.8235 5.12256 12.0888 5.94779 8.56898L6.77302 5.04071C6.94144 4.32495 7.14353 3.70182 7.39615 3.18816C8.38137 1.15035 10.0571 0.603 12.8696 1.26824L14.2759 1.59664C17.8041 2.42187 18.882 4.16496 18.0568 7.68481Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12.4995 15.2213C11.9774 15.575 11.3206 15.8697 10.5206 16.1307L9.19013 16.5686C5.84712 17.6465 4.08719 16.7454 3.00092 13.4024L1.92307 10.0762C0.84522 6.73323 1.73781 4.96488 5.08083 3.88703L6.4113 3.44915C6.75655 3.33968 7.08496 3.24706 7.39652 3.18811C7.1439 3.70177 6.94181 4.32491 6.77339 5.04066L5.94816 8.56894C5.12294 12.0888 6.20921 13.8235 9.72064 14.6571L11.1353 14.9939C11.6237 15.1118 12.0784 15.1876 12.4995 15.2213Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M10.4609 6.07654L14.545 7.11228" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.63672 9.33533L12.0787 9.95846" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+
+
+                                    <span>History</span>
+                                </button>
+                            </h2>
+                            <div id="block-collapseThree" class="accordion-collapse collapse show"
+                                aria-labelledby="blockHeadingThree">
+                                <div class="accordion-body sidebar__body">
+
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="{% static 'assets/images/nft/nd-a-three.png' %}" alt="" class="bidder__img">
+                                            <img src="{% static 'assets/images/icons/tick-blue-m.svg' %}" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.78 ETH</span></h5>
+                                            <p>by <span> Norman Gordon</span> 1 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="{% static 'assets/images/nft/nd-a-four.png' %}" alt="" class="bidder__img">
+                                            <img src="{% static 'assets/images/icons/tick-blue-m.svg' %}" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.12 ETH</span></h5>
+                                            <p>by <span>Tsuki Genesis</span> 2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="{% static 'assets/images/nft/nd-a-one.png' %}" alt="" class="bidder__img">
+                                            <img src="{% static 'assets/images/icons/tick-blue-m.svg' %}" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.83 ETH</span></h5>
+                                            <p>by <span>Tsuki Genesis</span> 1 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="{% static 'assets/images/nft/nd-a-two.png' %}" alt="" class="bidder__img">
+                                            <img src="{% static 'assets/images/icons/tick-blue-m.svg' %}" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.23 ETH</span></h5>
+                                            <p>by <span>Jahid Hassan</span> 10 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {% include 'include/footer.html' %}
+    {% endblock %}

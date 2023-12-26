@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <title>NFTOcean - NFT Marketplace Website Template + Light & Dark</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="20x20">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="assets/css/dropzone.min.css">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- animate Css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Swiper bundle Css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body class="theme-light-active">
+
+     <!-- mobil__searchbar style -->
+     <div class="mobil__searchbar" id="mobilSearch">
+        <div class="input__wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="pb-3 d-flex align-items-center justify-content-between"><h5>What are you looking for?</h5> <span class="close__search" id="closeSearch">Close Popup</span></div>
+                        <form action="#">
+                            <div class="d-flex">
+                                <input type="text" placeholder="Search Item, Creators, Collections etc.">
+                                <button class="submit-v1 ml-2">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============  header area start =============== -->
+    <header>
+        <div class="header-area header-defult header_style__two bg-body">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-2 col-lg-3 col-md-2 col-2 align-items-center d-flex order-0">
+                        <div class="nav-logo logo-switch d-flex justify-content-between align-items-center">
+                            <a class="logo-dark" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                            <a class="logo-light" href="index.html"><img src="assets/images/logo-v2.png" alt="logo"></a>
+                        </div>
+                        <div class="nav-search-style-two w-100 d-xl-block d-none">
+                            <span class="search__icon">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.26847 16.0378C12.2827 16.0378 15.5369 12.7834 15.5369 8.7689C15.5369 4.7544 12.2827 1.5 8.26847 1.5C4.2542 1.5 1 4.7544 1 8.7689C1 12.7834 4.2542 16.0378 8.26847 16.0378Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.0002 17.5L13.4023 13.9025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                            </span>
+                            <input type="text" placeholder="Collection, item or user">
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-10 col-lg-9 d-flex justify-content-end">
+                        <nav class="main-nav mr-2">
+                            <div class="inner-logo d-xl-none text-center pt-4">
+                                <a href="#" class="for-dark"><img src="assets/images/logo.png" alt=""></a>
+                                <a href="#" class="for-light"><img src="assets/images/logo-v2.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Home</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home Style - 01</a></li>
+                                        <li><a href="index-2.html">Home Style - 02</a></li>
+                                        <li><a href="index-3.html">Home Style - 03</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Explore</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="marketplace-1.html">Marketplace - 1</a></li>
+                                        <li><a href="marketplace-2.html">Marketplace - 2</a></li>
+                                        <li><a href="auction.html">Live Auction</a></li>
+                                        <li><a href="collection.html">Collection</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Pages</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="auction.html">Live Auction</a></li>
+                                        <li><a href="collection.html">Collection</a></li>
+                                        <li><a href="activity.html">Activity</a></li>
+                                        <li><a href="connect-wallet.html">Connect Wallet</a></li>
+                                        <li><a href="nft-details.html">NFT Details</a></li>
+                                        <li><a href="author-profile.html">Author Profile</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Create</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="create.html">Create NFT</a></li>
+                                        <li><a href="create-multiple.html">Create NFT (Maltiple)</a></li>
+                                        <li><a href="create-single.html">Create NFT (Single)</a></li>
+                                        <li><a href="creators.html">Creators</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Blog</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">Blog Grid</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                            </ul>
+
+                            <div class="d-xl-none d-inline-flex flex-column gap-3 px-3 mt-4">
+                                <a href="connect-wallet.html" class="btn-pill-v1"><span>Connect Wallet</span></a>
+                            </div>
+                        </nav>
+
+                        <div class="nav-actions d-flex align-items-center">
+                           
+                            <div class="d-none d-md-block mr-2">
+                                <a href="connect-wallet.html" class="btn-pill-v1"><span>Connect Wallet</span></a>
+                            </div>
+                            <button type="button" class="nav_search__icon mr-2 d-block d-xl-none mr-2 style__two" id="navSearch">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.26847 16.0378C12.2827 16.0378 15.5369 12.7834 15.5369 8.7689C15.5369 4.7544 12.2827 1.5 8.26847 1.5C4.2542 1.5 1 4.7544 1 8.7689C1 12.7834 4.2542 16.0378 8.26847 16.0378Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M17.0002 17.5L13.4023 13.9025" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <label class="theme-switch-one style__two">
+                                <input type="checkbox" id="slider" class="slider-light check-status">
+                                <span class="slider round"></span>
+                            </label>
+                           
+                            <div class="d-flex align-items-center gap-4 ml-2">
+                                <div class="mobile-menu d-flex ">
+                                    <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
+                                        <span class="h-top"></span>
+                                        <span class="h-middle"></span>
+                                        <span class="h-bottom"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===============  header area end =============== -->
+
+    <!-- ===============  breadcrumb style start =============== -->
+    <div class="breadcrumb_style__two bg-body-2">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <a href="index.html" class="back__btn">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 6.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6 11.5L1 6.5L6 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span>Back to home</span>
+                </a>
+
+                <ul class="d-flex page__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Pages</li>
+                    <li>Blog Details</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  breadcrumb style end =============== -->
+
+    <!-- ===============  blog details wrapper start=============== -->
+    <div class="blog_details__wrapper bg-body-2 section_gap_y_bottom__1 pt-60 overflow-hidden">
+        <div class="container">
+            <div class="blog__details">
+                <div class="row ">
+                    <div class="blog_d__header">
+                        <ul class="blog__actions">
+                            <li><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 3.25V7.15002C13 8.64002 12.24 9.76001 11 10.2C10.62 10.33 10.2 10.4 9.75 10.4H7.15L4.26 12.33C3.83 12.61 3.25 12.3 3.25 11.79V10.4C2.28 10.4 1.46 10.08 0.89 9.51001C0.32 8.94001 0 8.12002 0 7.15002V3.25C0 2.8 0.0699998 2.38 0.2 2C0.64 0.76 1.76 0 3.25 0H9.75C11.7 0 13 1.3 13 3.25Z"
+                                        fill="currentColor"></path>
+                                </svg>
+    
+                                <span>1</span>
+                            </li>
+                            <li><svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.326376 6.88142C1.32175 4.29472 4.86578 4.15524 4.00989 0.395643C3.94649 0.116685 4.24447 -0.0988737 4.48539 0.0469453C6.78679 1.4037 8.44152 4.12354 7.05307 7.68659C6.93895 7.97823 7.28131 8.25085 7.52856 8.06065C8.6761 7.19208 8.79655 5.9431 8.69512 5.04917C8.65708 4.71949 9.08819 4.56099 9.27205 4.83361C9.70317 5.49297 10.1406 6.55808 10.1406 8.16209C9.89971 11.7125 6.90091 12.8029 5.82312 12.9424C4.28251 13.139 2.6151 12.8537 1.41685 11.7568C0.0981377 10.5332 -0.383699 8.58053 0.326376 6.88142ZM6.01965 10.4635C5.1067 10.2416 4.82774 9.18916 4.70094 8.60588C4.49173 7.69927 5.30958 6.81168 4.758 5.37885C5.12898 6.34253 6.01965 9.17015 6.01965 10.4635C4.18107 11.9724 4.11767 11.1419 6.01965 10.4635Z"
+                                        fill="currentColor"></path>
+                                </svg>
+    
+                                <span>5480</span>
+                            </li>
+                            <li><svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.95279 1.3359V0.433735C7.95279 0.196627 7.75616 0 7.51905 0C7.28194 0 7.08532 0.196627 7.08532 0.433735V1.3012H3.32628V0.433735C3.32628 0.196627 3.12965 0 2.89255 0C2.65544 0 2.45881 0.196627 2.45881 0.433735V1.3359C0.897365 1.48048 0.139775 2.41157 0.0241122 3.79373C0.0125459 3.96144 0.151341 4.10024 0.313269 4.10024H10.0983C10.266 4.10024 10.4048 3.95566 10.3875 3.79373C10.2718 2.41157 9.51423 1.48048 7.95279 1.3359Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M9.83133 4.96771C10.1494 4.96771 10.4096 5.22795 10.4096 5.54603V9.10844C10.4096 10.8434 9.54217 12 7.51807 12H2.89157C0.86747 12 0 10.8434 0 9.10844V5.54603C0 5.22795 0.260241 4.96771 0.578313 4.96771H9.83133Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M3.18378 7.9518C3.03342 7.9518 2.88306 7.88818 2.77318 7.78408C2.66908 7.6742 2.60547 7.52384 2.60547 7.37348C2.60547 7.22312 2.66908 7.07276 2.77318 6.96288C2.93511 6.80096 3.18957 6.7489 3.40354 6.84143C3.47872 6.87034 3.54234 6.91084 3.59438 6.96288C3.69848 7.07276 3.7621 7.22312 3.7621 7.37348C3.7621 7.52384 3.69848 7.6742 3.59438 7.78408C3.4845 7.88818 3.33414 7.9518 3.18378 7.9518Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M5.19941 7.9518C5.04905 7.9518 4.89868 7.88818 4.78881 7.78408C4.68471 7.6742 4.62109 7.52384 4.62109 7.37348C4.62109 7.22312 4.68471 7.07276 4.78881 6.96288C4.84085 6.91084 4.90447 6.87034 4.97965 6.84143C5.19362 6.7489 5.44808 6.80096 5.61001 6.96288C5.71411 7.07276 5.77772 7.22312 5.77772 7.37348C5.77772 7.52384 5.71411 7.6742 5.61001 7.78408C5.58109 7.80721 5.55218 7.83034 5.52326 7.85347C5.48856 7.87661 5.45387 7.89397 5.41917 7.90554C5.38447 7.92289 5.34977 7.93445 5.31507 7.94024C5.27459 7.94602 5.23989 7.9518 5.19941 7.9518Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M7.23066 7.95183C7.0803 7.95183 6.92993 7.88821 6.82006 7.78411C6.71596 7.67423 6.65234 7.52388 6.65234 7.37352C6.65234 7.22316 6.71596 7.0728 6.82006 6.96292C6.87789 6.91087 6.93572 6.87038 7.0109 6.84146C7.11499 6.7952 7.23066 6.78363 7.34632 6.80676C7.38102 6.81255 7.41572 6.82411 7.45042 6.84146C7.48512 6.85303 7.51981 6.87039 7.55451 6.89352C7.58343 6.91666 7.61234 6.93979 7.64126 6.96292C7.74536 7.0728 7.80897 7.22316 7.80897 7.37352C7.80897 7.52388 7.74536 7.67423 7.64126 7.78411C7.61234 7.80725 7.58343 7.83038 7.55451 7.85351C7.51981 7.87664 7.48512 7.89401 7.45042 7.90557C7.41572 7.92292 7.38102 7.93449 7.34632 7.94027C7.30584 7.94605 7.26536 7.95183 7.23066 7.95183Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M3.18378 9.97591C3.1086 9.97591 3.03342 9.95857 2.96402 9.92965C2.88884 9.90074 2.83101 9.86024 2.77318 9.80819C2.66908 9.69831 2.60547 9.54796 2.60547 9.39759C2.60547 9.24723 2.66908 9.09688 2.77318 8.987C2.83101 8.93495 2.88884 8.89445 2.96402 8.86554C3.06812 8.81927 3.18378 8.80771 3.29945 8.83084C3.33414 8.83662 3.36884 8.84819 3.40354 8.86554C3.43824 8.87711 3.47294 8.89447 3.50764 8.9176C3.53655 8.94074 3.56547 8.96386 3.59438 8.987C3.69848 9.09688 3.7621 9.24723 3.7621 9.39759C3.7621 9.54796 3.69848 9.69831 3.59438 9.80819C3.56547 9.83132 3.53655 9.86024 3.50764 9.87759C3.47294 9.90072 3.43824 9.91808 3.40354 9.92965C3.36884 9.947 3.33414 9.95856 3.29945 9.96435C3.25896 9.97013 3.22426 9.97591 3.18378 9.97591Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M5.19941 9.97587C5.04905 9.97587 4.89868 9.91225 4.78881 9.80815C4.68471 9.69827 4.62109 9.54792 4.62109 9.39756C4.62109 9.2472 4.68471 9.09684 4.78881 8.98696C5.00278 8.77298 5.39603 8.77298 5.61001 8.98696C5.71411 9.09684 5.77772 9.2472 5.77772 9.39756C5.77772 9.54792 5.71411 9.69827 5.61001 9.80815C5.50013 9.91225 5.34977 9.97587 5.19941 9.97587Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M7.23066 9.97587C7.0803 9.97587 6.92993 9.91225 6.82006 9.80815C6.71596 9.69827 6.65234 9.54792 6.65234 9.39756C6.65234 9.2472 6.71596 9.09684 6.82006 8.98696C7.03403 8.77298 7.42728 8.77298 7.64126 8.98696C7.74536 9.09684 7.80897 9.2472 7.80897 9.39756C7.80897 9.54792 7.74536 9.69827 7.64126 9.80815C7.53138 9.91225 7.38102 9.97587 7.23066 9.97587Z"
+                                        fill="currentColor"></path>
+                                </svg>
+    
+                                <span>2</span>
+                            </li>
+                        </ul>
+                        <h2 class="blog__title">A year In Images: Defining NFTs on
+                            Foundation In 2022</h2>
+                        <ul class="blog__meta">
+                            <li class="blog__writer">
+                                <img src="assets/images/blog/blog-avater-sm.png" alt="" class="blog__avater">
+                                <span>Ephimera</span>
+                            </li>
+                            <li>October 4, 2022</li>
+                            <li class="reading__time"><ins>4</ins> <span>Min Read</span> </li>
+                        </ul>
+    
+                        <div class="blog-thumb">
+                            <img src="assets/images/blog/blog-d-thumb.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-6">
+                    <div class="col-lg-8 pt-60">
+                        <div class="blog_d__body">
+
+                            <p >Damon Davis is a post-disciplinary artist exploring identity, culture, and power, often through a surrealist lens. Based in St. Louis, Missouri, Damon utilizes a variety of media such as film, sculpture, multi-media and more to illustrate how identity is formed by power and mythology. His most notable work, “Darker Gods”, navigates Afro-surrealist manifestations of black culture. Damon’s work is held in the permanent collections of the Smithsonian National Museum of African American History and Culture.</p>
+
+                            <h3 class="pt-4">1. Be Unique and Memorable</h3>
+
+                            <p class="pt-3">FTs have a steep learning curve, which is symptomatic of such a cutting edge concept. One of the best ways to learn about it is to get yourself immersed in the community — luckily, there are loads of people willing to guide you through the blockchain maze. “Being very active on communications platforms like Discord was very helpful for me early on — actually, Rarible Discord is very active and there are a lot of collectors on there,” Lux Expression said, adding:</p>
+
+                            <div class="blog_inner__img mt-40">
+                                <img src="assets/images/blog/blog-d-inner.png" alt="">
+                            </div>
+
+                            <h5>“Being very active on communications platforms like Discord was very helpful for me early on — actually, Rarible Discord is very active and there are a lot of collectors on there,” Lux Expression said, adding:</h5>
+
+                            <ul>
+                                <li>Consectetur libero id faucibus nisl tincidunt eget.</li>
+                                <li>Penatibus et magnis dis parturient montes nascetur ridiculus.</li>
+                                <li>Mix ea viderer sanctus nunc mattis enim indoctum.</li>
+                                <li>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a.</li>
+                                <li>Possit theo phrastusat erat pellentesque adipiscing.</li>
+                            </ul>
+
+                            <div class="blog__quote">
+                                <div class="uppper__icon">
+                                    <img src="assets/images/icons/quote-blue.svg" alt="">
+                                </div>
+                                <h4> Rapidious qntegrate distrbuted supply chains throuih markeposition bestn practces chain marke positonn</h4>
+                                <div class="lower__icon">
+                                    <svg width="50" height="34" viewBox="0 0 50 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_604_144" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="34">
+                                        <rect width="50" height="34" fill="#C4C4C4"></rect>
+                                        </mask>
+                                        <g mask="url(#mask0_604_144)">
+                                        <path d="M34.7484 22.9541H46.4755C46.2755 34.6312 43.975 36.5566 36.7988 40.8073C35.9736 41.3074 35.6986 42.3575 36.1987 43.2077C36.6987 44.0328 37.7489 44.308 38.5991 43.8079C47.0506 38.807 50.0011 35.7564 50.0011 21.2037V7.72645C50.0011 3.45069 46.5255 0 42.2747 0H34.7734C30.3726 0 27.047 3.32566 27.047 7.72645V15.2278C27.022 19.6286 30.3476 22.9541 34.7484 22.9541Z" fill="currentColor" fill-opacity="0.08"></path>
+                                        <path d="M7.70152 22.9541H19.4286C19.2286 34.6312 16.9282 36.5566 9.75189 40.8073C8.92674 41.3074 8.65169 42.3575 9.15178 43.2077C9.65187 44.0328 10.7021 44.308 11.5522 43.8079C20.0037 38.807 22.9543 35.7564 22.9543 21.2037V7.72645C22.9543 3.45069 19.4786 0 15.2279 0H7.72652C3.32574 0 0.000140069 3.32566 0.000140069 7.72645V15.2278C-0.0248644 19.6286 3.30073 22.9541 7.70152 22.9541Z" fill="currentColor" fill-opacity="0.08"></path>
+                                        </g>
+                                        </svg>
+                                </div>
+                            </div>
+
+                            <p class="pt-30">If you are getting started in the NFT space, be humble and disciplined. You might have heard quite a few rags-to-riches stories about people making a fortune on collectibles, but remember that being a successful NFT artist or trader requires skills.</p>
+                            <br>
+                            <span class="highlighted__text">Till then, Happy Designing!</span>
+                        </div>
+
+                        <div class="blog__bottom">
+                            <div class="d-flex align-content-center justify-content-between flex-wrap">
+                                <ul class="blog__tags">
+                                    <li><a href="blog.html">NFT</a></li>
+                                    <li><a href="blog.html">Creative</a></li>
+                                    <li><a href="blog.html">Crypto</a></li>
+                                    <li><a href="blog.html">Software</a></li>
+                                    <li><a href="blog.html">Art</a></li>
+                                </ul>
+                                <div class="blog__share d-flex align-items-center">
+                                    <span>ShareThis :</span>
+                                    <ul class="d-flex">
+                                        <li><a href="#"><img src="assets/images/icons/fb-round.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/images/icons/twitter-round.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/images/icons/insta-round.svg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="blog__publisher mt-40">
+                                <div class="publisher__avater">
+                                    <img src="assets/images/blog/publisher-avater.png" alt="">
+                                </div>
+                                <div class="publisher__disc">
+                                    <h5>Dylan Meringue</h5>
+                                    <p>Eu consequat ac felis donec et. Amet risus nullam eget felis eget. Cursus risus at ultrices mi tempus.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="blog__switcher d-flex gap-3 pt-40 flex-column flex-lg-row">
+                                <div class="single__switcher">
+                                    <a class="switch__icon" href="blog-details.html">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 8H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 1L1 8L8 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                    <div class="switcher__info">
+                                        <span>Previous Post </span>
+                                        <h5><a href="blog-details.html">Most Employees Support Measures to Prevent Spread</a></h5>
+                                    </div>
+                                </div>
+                                <div class="single__switcher toright">
+                                    <div class="switcher__info text-end">
+                                        <span>Previous Post </span>
+                                        <h5><a href="blog-details.html">Most Employees Support Measures to Prevent Spread</a></h5>
+                                    </div>
+                                    <a class="switch__icon" href="blog-details.html">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 8H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 1L15 8L8 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="blog__comments pt-60">
+                                <h4 class="comt__count pb-4">Comments (3)</h4>
+                                <ul class="single_comment__block">
+                                    <li class="single__com">
+                                        <div class="commentor">
+                                            <img src="assets/images/blog/bd-avater-one.png" alt="">
+                                        </div>
+                                        <div class="comment__body">
+                                            <h5>Daniel Smith <span>. April 16,2022 at 10:30 pm</span></h5>
+                                            <p>Dolor sit amet, consectetur adipiscing elit. Phasellus feugiat elit vitae enim lacinia semper. cras nulla lectus, porttitor vitae urna.</p>
+                                            <button class="reply__btn">
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.5 6L1 3.5L3.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M9 9V5.5C9 4.96957 8.78929 4.46086 8.41421 4.08579C8.03914 3.71071 7.53043 3.5 7 3.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>Reply</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="single__com">
+                                        <div class="commentor">
+                                            <img src="assets/images/blog/bd-avater-two.png" alt="">
+                                        </div>
+                                        <div class="comment__body">
+                                            <h5>Jim Séchen <span>. April 16,2022 at 10:30 pm</span></h5>
+                                            <p>Dolor sit amet, consectetur adipiscing elit. Phasellus feugiat elit vitae enim lacinia semper. cras nulla lectus.</p>
+                                            <button class="reply__btn">
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.5 6L1 3.5L3.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M9 9V5.5C9 4.96957 8.78929 4.46086 8.41421 4.08579C8.03914 3.71071 7.53043 3.5 7 3.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>Reply</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="single__com">
+                                        <div class="commentor">
+                                            <img src="assets/images/blog/bd-avater-three.png" alt="">
+                                        </div>
+                                        <div class="comment__body">
+                                            <h5>Ravi O'Leigh <span>. April 16,2022 at 10:30 pm</span></h5>
+                                            <p>Dolor sit amet, consectetur adipiscing elit. Phasellus feugiat elit vitae enim lacinia.</p>
+                                            <button class="reply__btn">
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.5 6L1 3.5L3.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M9 9V5.5C9 4.96957 8.78929 4.46086 8.41421 4.08579C8.03914 3.71071 7.53043 3.5 7 3.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>Reply</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="blog_commment__form pt-60">
+                                <h4 class="comt__count pb-4">Leave a reply</h4>
+
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="custom_input__style">
+                                                <label for="name">Your Name</label>
+                                                <input type="text" id="name" placeholder="Enter your name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="custom_input__style">
+                                                <label for="email">Your Email</label>
+                                                <input type="email" id="email" placeholder="Enter your email">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 pt-3">
+                                            <div class="custom_input__style">
+                                                <label for="massege">Your Comment</label>
+                                                <textarea id="massege" cols="30" rows="5" placeholder="Write a Comment"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="submit__btn mt-30">
+                                            <button type="submit" class="submit-v1">Send Message</button>
+                                           </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-60">
+                        <aside class="blog__sidebar">
+                            <div class="single__widget pt-0">
+                                <div class="widget__search position-relative">
+                                    <input type="text" id="sidebar__search" placeholder="Search here">
+                                    <label for="sidebar__search">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.35992 13.7206C10.8724 13.7206 13.7198 10.873 13.7198 7.36029C13.7198 3.8476 10.8724 1 7.35992 1C3.84743 1 1 3.8476 1 7.36029C1 10.873 3.84743 13.7206 7.35992 13.7206Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.9997 15L11.8516 11.8522" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <div class="single__widget pt-40">
+                                <h5 class="widget__title">Popular Posts</h5>
+                                <ul class="widget__body popular__post">
+                                    <li class="single_blog__sm">
+                                        <div class="blog__thumb">
+                                            <img src="assets/images/blog/bs-one.png" alt="">
+                                        </div>
+                                        <div class="blog__disc">
+                                            <h6 class="blog__title"><a href="blog-details.html">Hack sponsorship NFT
+                                                Ocean protocol Prerelease</a></h6>
+                                            <span> <i class="bi bi-clock"></i> March 8, 2022</span>
+                                        </div>
+                                    </li>
+                                    <li class="single_blog__sm">
+                                        <div class="blog__thumb">
+                                            <img src="assets/images/blog/bs-two.png" alt="">
+                                        </div>
+                                        <div class="blog__disc">
+                                            <h6 class="blog__title"><a href="blog-details.html">Yatreda on the power
+                                                Storytelling owning history. </a></h6>
+                                            <span> <i class="bi bi-clock"></i> March 8, 2022</span>
+                                        </div>
+                                    </li>
+                                    <li class="single_blog__sm">
+                                        <div class="blog__thumb">
+                                            <img src="assets/images/blog/bs-three.png" alt="">
+                                        </div>
+                                        <div class="blog__disc">
+                                            <h6 class="blog__title"><a href="blog-details.html">The Breakthrough Genres of
+                                                Foundation in 2021</a></h6>
+                                            <span> <i class="bi bi-clock"></i> March 8, 2022</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <div class="single__widget pt-40">
+                                <h5 class="widget__title">Categories</h5>
+                                <ul class="widget__body categories">
+                                    <li><a href="blog.html"><p>Arts</p> <span>1</span></a></li>
+                                    <li><a href="blog.html"><p>Photography</p> <span>3</span></a></li>
+                                    <li><a href="blog.html"><p>Sports</p> <span>8</span></a></li>
+                                    <li><a href="blog.html"><p>Technology</p> <span>5</span></a></li>
+                                    <li><a href="blog.html"><p>Domains</p> <span>4</span></a></li>
+                                    <li><a href="blog.html"><p>Marketing</p> <span>2</span></a></li>
+                                </ul>
+                            </div>
+    
+                            <div class="single__widget pt-40">
+                                <h5 class="widget__title">Popular Tags</h5>
+                                <ul class="widget__body popular__tags">
+                                    <li><a href="blog.html">NFT</a></li>
+                                    <li><a href="blog.html">Creative</a></li>
+                                    <li><a href="blog.html">Agency</a></li>
+                                    <li><a href="blog.html">Marketplace</a></li>
+                                    <li><a href="blog.html">Software</a></li>
+                                    <li><a href="blog.html">Art</a></li>
+                                </ul>
+                            </div>
+    
+                            <div class="single__widget pt-40">
+                                <h5 class="widget__title">Social Profiles</h5>
+                                <ul class="widget__body social__profiles">
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/icons/fb-round.svg" alt="">
+                                        <span>SHARE</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/icons/twitter-round.svg" alt="">
+                                            <span>SHARE</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/icons/insta-round.svg" alt="">
+                                             <span>SHARE</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- ===============  blog details wrapper end=============== -->
+
+    <!-- ===============  footer style start =============== -->
+    <div class="footer_style__one bg-body section_gap_y_top__2">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html" class="for-dark"><img src="assets/images/logo.png" alt=""></a>
+                            <a href="index.html" class="for-light"><img src="assets/images/logo-v2.png" alt=""></a>
+                        </div>
+                        <p>NFTOcean is a shared liquidity NFT market smart contract</p>
+
+
+                        <h5>Language</h5>
+                        <div class="languege__dropdown">
+                            <button>
+                               <img src="assets/images/icons/flag-us.png" alt=""> English
+                            </button>
+                            <ul class="languege__list">
+                              <li><a href="#"> <img src="assets/images/icons/flag-us.png" alt=""> English</a></li>
+                              <li><a href="#"> <img src="assets/images/icons/flag-us.png" alt=""> English</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex justify-content-lg-center">
+                    <div class="footer__widget">
+                        <h6 class="footer_widget__title">Market plac</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="author-profile.html">Profile</a></li>
+                            <li><a href="marketplace-1.html">Marketplace</a></li>
+                            <li><a href="creators.html">Creators</a></li>
+                            <li><a href="activity.html">Activity</a></li>
+                            <li><a href="collection.html">Colletctions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 d-flex justify-content-lg-center ">
+                    <div class="footer__widget">
+                        <h6 class="footer_widget__title">Company</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="create-multiple.html">Upload</a></li>
+                            <li><a href="connect-wallet.html">Connect wallet</a></li>
+                            <li><a href="blog.html">Our blog </a></li>
+                            <li><a href="nft-details.html">Item details</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer__widget newslatter__widget">
+                        <h6 class="footer_widget__title">Join Newsletter</h6>
+                        <form action="#" method="POST" id="footer_form__one">
+                            <div class="footer_newslatter__one style__two mt-2">
+                                <input type="text" placeholder="Your Email">
+                                <button type="submit"
+                                    class="form__submit submit-btn-one btn-rounded-v1">Subscribe</button>
+                            </div>
+                        </form>
+
+                        <ul class="footer_social__links style__two d-flex">
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-github"></i></a></li>
+                            <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer__copyright has-border-top">
+                <div class="col-lg-12">
+                    <p class="text-center">Copyright©2022. Created with love by <a href="#">wprealizer</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  footer style end =============== -->
+
+     <!--Custom jsvascript and Plugins -->
+
+    <!-- jquery latest -->
+    <script src="assets/js/jquery-3.6.0.min.js" ></script>
+    <!-- latest bootstarp bundle -->
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>
+    <!-- swiper bundle -->
+    <script src="assets/js/swiper-bundle.min.js" ></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js" ></script>
+    <!-- nice select -->
+    <script src="assets/js/jquery.nice-select.min.js" ></script>
+    <!-- jquery countdown -->
+    <script src="assets/js/jquery.countdown.js"  ></script>
+    <!-- dropzone js -->
+    <script src="assets/js/dropzone.min.js" ></script>
+    <!-- fancybox -->
+    <script src="assets/js/jquery.fancybox.min.js" ></script>
+    <!-- Custom JavaScript -->
+    <script async src="assets/js/main.js"></script>
+</body>
+
+</html>

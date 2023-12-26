@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <title>NFTOcean - NFT Marketplace Website Template + Light & Dark</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="20x20">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="assets/css/dropzone.min.css">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- animate Css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Swiper bundle Css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body class="theme-light-active">
+
+     <!-- mobil__searchbar style -->
+     <div class="mobil__searchbar" id="mobilSearch">
+        <div class="input__wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="pb-3 d-flex align-items-center justify-content-between"><h5>What are you looking for?</h5> <span class="close__search" id="closeSearch">Close Popup</span></div>
+                        <form action="#">
+                            <div class="d-flex">
+                                <input type="text" placeholder="Search Item, Creators, Collections etc.">
+                                <button class="submit-v1 ml-2">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============  header area start =============== -->
+    <header>
+        <div class="header-area header-defult header_style__two bg-body">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-2 col-lg-3 col-md-2 col-2 align-items-center d-flex order-0">
+                        <div class="nav-logo logo-switch d-flex justify-content-between align-items-center">
+                            <a class="logo-dark" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                            <a class="logo-light" href="index.html"><img src="assets/images/logo-v2.png" alt="logo"></a>
+                        </div>
+                        <div class="nav-search-style-two w-100 d-xl-block d-none">
+                            <span class="search__icon">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.26847 16.0378C12.2827 16.0378 15.5369 12.7834 15.5369 8.7689C15.5369 4.7544 12.2827 1.5 8.26847 1.5C4.2542 1.5 1 4.7544 1 8.7689C1 12.7834 4.2542 16.0378 8.26847 16.0378Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.0002 17.5L13.4023 13.9025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                            </span>
+                            <input type="text" placeholder="Collection, item or user">
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-10 col-lg-9 d-flex justify-content-end">
+                        <nav class="main-nav mr-2">
+                            <div class="inner-logo d-xl-none text-center pt-4">
+                                <a href="#" class="for-dark"><img src="assets/images/logo.png" alt=""></a>
+                                <a href="#" class="for-light"><img src="assets/images/logo-v2.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Home</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home Style - 01</a></li>
+                                        <li><a href="index-2.html">Home Style - 02</a></li>
+                                        <li><a href="index-3.html">Home Style - 03</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Explore</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="marketplace-1.html">Marketplace - 1</a></li>
+                                        <li><a href="marketplace-2.html">Marketplace - 2</a></li>
+                                        <li><a href="auction.html">Live Auction</a></li>
+                                        <li><a href="collection.html">Collection</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Pages</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="auction.html">Live Auction</a></li>
+                                        <li><a href="collection.html">Collection</a></li>
+                                        <li><a href="activity.html">Activity</a></li>
+                                        <li><a href="connect-wallet.html">Connect Wallet</a></li>
+                                        <li><a href="nft-details.html">NFT Details</a></li>
+                                        <li><a href="author-profile.html">Author Profile</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Create</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="create.html">Create NFT</a></li>
+                                        <li><a href="create-multiple.html">Create NFT (Maltiple)</a></li>
+                                        <li><a href="create-single.html">Create NFT (Single)</a></li>
+                                        <li><a href="creators.html">Creators</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Blog</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">Blog Grid</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                            </ul>
+
+                            <div class="d-xl-none d-inline-flex flex-column gap-3 px-3 mt-4">
+                                <a href="connect-wallet.html" class="btn-pill-v1"><span>Connect Wallet</span></a>
+                            </div>
+                        </nav>
+
+                        <div class="nav-actions d-flex align-items-center">
+                           
+                            <div class="d-none d-md-block mr-2">
+                                <a href="connect-wallet.html" class="btn-pill-v1"><span>Connect Wallet</span></a>
+                            </div>
+                            <button type="button" class="nav_search__icon mr-2 d-block d-xl-none mr-2 style__two" id="navSearch">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.26847 16.0378C12.2827 16.0378 15.5369 12.7834 15.5369 8.7689C15.5369 4.7544 12.2827 1.5 8.26847 1.5C4.2542 1.5 1 4.7544 1 8.7689C1 12.7834 4.2542 16.0378 8.26847 16.0378Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M17.0002 17.5L13.4023 13.9025" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <label class="theme-switch-one style__two">
+                                <input type="checkbox" id="slider" class="slider-light check-status">
+                                <span class="slider round"></span>
+                            </label>
+                           
+                            <div class="d-flex align-items-center gap-4 ml-2">
+                                <div class="mobile-menu d-flex ">
+                                    <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
+                                        <span class="h-top"></span>
+                                        <span class="h-middle"></span>
+                                        <span class="h-bottom"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===============  header area end =============== -->
+
+    <!-- ===============  breadcrumb style start =============== -->
+    <div class="breadcrumb_style__one bg-body-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="page__title">Creators</h2>
+                    <ul class="d-flex justify-content-center page__list">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Creators</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  breadcrumb style end =============== -->
+    
+    <!-- ===============  creators grid style start =============== -->
+    <div class="creators_grid_style__one bg-body-2 section_gap_y_bottom__1">
+        <div class="container">
+            <div class="row nft_grid__header px-0 align-content-center">
+                <div class="col-md-6 d-flex align-items-center">
+                    <span class="creators__count">Profiles 4,592</span>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end mt-lg-0 mt-3">
+                    <div class="select_style__one">
+                        <select class="select__nice">
+                            <option data-display="Recently Listed">Recently Listed</option>
+                            <option value="1">Recently Created</option>
+                            <option value="2">Another option</option>
+                            <option value="3">Recently Sold</option>
+                            <option value="4">Price: Low to High</option>
+                            <option value="5">Price: High to Low</option>
+                            <option value="6">Oldest</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row pt-40 gy-4">
+                 <div class="col-lg-3">
+                     <!-- sidebar searchbar -->
+                    <form action="#">
+                        <div class="sidebar__searchbar">
+                            <input type="text" placeholder="Search here">
+                            <button type="submit" class="submit__btn">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.35992 13.7206C10.8724 13.7206 13.7198 10.873 13.7198 7.36029C13.7198 3.8476 10.8724 1 7.35992 1C3.84743 1 1 3.8476 1 7.36029C1 10.873 3.84743 13.7206 7.35992 13.7206Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.9997 15L11.8516 11.8522" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+
+                     <!-- sidebar Type filter -->
+                     <div class="accordion-item sidebar_collections__filter sidebar__filter ">
+                        <h2 class="accordion-header sidebar__header" id="filterHeadingType">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapseType" aria-expanded="true" aria-controls="filter-collapseType">
+                            Type
+                          </button>
+                        </h2>
+                        <div id="filter-collapseType" class="accordion-collapse collapse show" aria-labelledby="filterHeadingType">
+                          <div class="accordion-body sidebar__body">
+                               <ul>
+                                   <li class="single__col style__two">
+                                    <label>
+                                        <span class="col__right">
+                                            <input type="checkbox">
+                                             <span class="check__circle"></span> 
+                                            <ins class="col__name">Creator</ins>
+                                        </span>
+                                        <span class="type__count">2,080</span>
+                                    </label>
+                                   </li>
+                                   <li class="single__col style__two">
+                                    <label>
+                                        <span class="col__right">
+                                            <input type="checkbox">
+                                             <span class="check__circle"></span> 
+                                            <ins class="col__name">Collector</ins>
+                                        </span>
+                                        <span class="type__count">1,080</span>
+                                    </label>
+                                   </li>
+                                   <li class="single__col style__two">
+                                    <label>
+                                        <span class="col__right">
+                                            <input type="checkbox">
+                                             <span class="check__circle"></span> 
+                                            <ins class="col__name">Other</ins>
+                                        </span>
+                                        <span class="type__count">890</span>
+                                    </label>
+                                   </li>
+                               </ul>
+                          </div>
+                        </div>
+                    </div>
+
+
+                     <!-- sidebar Social Verification filter -->
+                     <div class="accordion-item sidebar_collections__filter sidebar__filter ">
+                        <h2 class="accordion-header sidebar__header" id="filterHeadingSocial">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapseSocial" aria-expanded="true" aria-controls="filter-collapseSocial">
+                            Social Verification
+                          </button>
+                        </h2>
+                        <div id="filter-collapseSocial" class="accordion-collapse collapse show" aria-labelledby="filterHeadingSocial" >
+                          <div class="accordion-body sidebar__body">
+                               <ul>
+                                   <li class="single__col style__two">
+                                    <label>
+                                        <span class="col__right">
+                                            <input type="checkbox">
+                                             <span class="check__circle"></span> 
+                                            <ins class="col__name">Twitter</ins>
+                                        </span>
+                                        <span class="type__count">2,080</span>
+                                    </label>
+                                   </li>
+                                   <li class="single__col style__two">
+                                    <label>
+                                        <span class="col__right">
+                                            <input type="checkbox">
+                                             <span class="check__circle"></span> 
+                                            <ins class="col__name">Instagram</ins>
+                                        </span>
+                                        <span class="type__count">1,080</span>
+                                    </label>
+                                   </li>
+                                   <li class="single__col style__two">
+                                    <label>
+                                        <span class="col__right">
+                                            <input type="checkbox">
+                                             <span class="check__circle"></span> 
+                                            <ins class="col__name">Not verified</ins>
+                                        </span>
+                                        <span class="type__count">890</span>
+                                    </label>
+                                   </li>
+                               </ul>
+                          </div>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="col-lg-9">
+                     <div class="row gy-4 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+                         <div class="col">
+                             <div class="seller_card_style__two">
+                                 <div class="seller__thumb">
+                                     <div class="seller__cover">
+                                         <img src="assets/images/artists/sc-one.png" alt="">
+                                     </div>
+                                     <div class="seller__avater">
+                                        <a href="author-profile.html">
+                                            <img src="assets/images/artists/sa-one.png" alt="" class="avater">
+                                        </a>
+                                        <img src="assets/images/icons/tick-blue-m.svg" alt="" class="blue__tick">
+                                     </div>
+                                     
+                                 </div>
+                                 <div class="seller__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <span class="total__value">426.14 ETH</span>
+                                    <button class="follow__btn">
+                                        Follow
+                                    </button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col">
+                             <div class="seller_card_style__two">
+                                 <div class="seller__thumb">
+                                     <div class="seller__cover">
+                                         <img src="assets/images/artists/sc-two.png" alt="">
+                                     </div>
+                                     <div class="seller__avater">
+                                        <a href="author-profile.html">
+                                            <img src="assets/images/artists/sa-two.png" alt="" class="avater">
+                                        </a>
+                                     </div>
+                                     
+                                 </div>
+                                 <div class="seller__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Sue Shei07</a></h6>
+                                    <span class="total__value">246.24 ETH</span>
+                                    <button class="follow__btn">
+                                        Follow
+                                    </button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col">
+                             <div class="seller_card_style__two">
+                                 <div class="seller__thumb">
+                                     <div class="seller__cover">
+                                         <img src="assets/images/artists/sc-three.png" alt="">
+                                     </div>
+                                     <div class="seller__avater">
+                                        <a href="author-profile.html">
+                                            <img src="assets/images/artists/sa-three.png" alt="" class="avater">
+                                        </a>
+                                     </div>
+                                     
+                                 </div>
+                                 <div class="seller__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Dianne russell</a></h6>
+                                    <span class="total__value">106.04 ETH</span>
+                                    <button class="follow__btn">
+                                        Follow
+                                    </button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col">
+                             <div class="seller_card_style__two">
+                                 <div class="seller__thumb">
+                                     <div class="seller__cover">
+                                         <img src="assets/images/artists/sc-four.png" alt="">
+                                     </div>
+                                     <div class="seller__avater">
+                                        <a href="author-profile.html">
+                                            <img src="assets/images/artists/sa-four.png" alt="" class="avater">
+                                        </a>
+                                        <img src="assets/images/icons/tick-blue-m.svg" alt="" class="blue__tick">
+                                     </div>
+                                     
+                                 </div>
+                                 <div class="seller__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Ravi O'Leigh</a></h6>
+                                    <span class="total__value">566.14 ETH</span>
+                                    <button class="follow__btn">
+                                        Follow
+                                    </button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col">
+                             <div class="seller_card_style__two">
+                                 <div class="seller__thumb">
+                                     <div class="seller__cover">
+                                         <img src="assets/images/artists/sc-five.png" alt="">
+                                     </div>
+                                     <div class="seller__avater">
+                                        <a href="author-profile.html">
+                                            <img src="assets/images/artists/sa-five.png" alt="" class="avater">
+                                        </a>
+                                     </div>
+                                     
+                                 </div>
+                                 <div class="seller__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Richard Tea</a></h6>
+                                    <span class="total__value">346.14 ETH</span>
+                                    <button class="follow__btn">
+                                        Follow
+                                    </button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col">
+                             <div class="seller_card_style__two">
+                                 <div class="seller__thumb">
+                                     <div class="seller__cover">
+                                         <img src="assets/images/artists/sc-six.png" alt="">
+                                     </div>
+                                     <div class="seller__avater">
+                                        <a href="author-profile.html">
+                                            <img src="assets/images/artists/sa-six.png" alt="" class="avater">
+                                        </a>
+                                        <img src="assets/images/icons/tick-blue-m.svg" alt="" class="blue__tick">
+                                     </div>
+                                     
+                                 </div>
+                                 <div class="seller__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Axie_Chat</a></h6>
+                                    <span class="total__value">324.00 ETH</span>
+                                    <button class="follow__btn">
+                                        Follow
+                                    </button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col">
+                             <div class="seller_card_style__two">
+                                 <div class="seller__thumb">
+                                     <div class="seller__cover">
+                                         <img src="assets/images/artists/sc-seven.png" alt="">
+                                     </div>
+                                     <div class="seller__avater">
+                                        <a href="author-profile.html">
+                                            <img src="assets/images/artists/sa-seven.png" alt="" class="avater">
+                                        </a>
+                                        <img src="assets/images/icons/tick-blue-m.svg" alt="" class="blue__tick">
+                                     </div>
+                                     
+                                 </div>
+                                 <div class="seller__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Jubayer</a></h6>
+                                    <span class="total__value">226.14 ETH</span>
+                                    <button class="follow__btn">
+                                        Follow
+                                    </button>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col">
+                             <div class="seller_card_style__two">
+                                 <div class="seller__thumb">
+                                     <div class="seller__cover">
+                                         <img src="assets/images/artists/sc-eight.png" alt="">
+                                     </div>
+                                     <div class="seller__avater">
+                                        <a href="author-profile.html">
+                                            <img src="assets/images/artists/sa-eight.png" alt="" class="avater">
+                                        </a>
+                                        <img src="assets/images/icons/tick-blue-m.svg" alt="" class="blue__tick">
+                                     </div>
+                                     
+                                 </div>
+                                 <div class="seller__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Gon Freecs</a></h6>
+                                    <span class="total__value">516.14 ETH</span>
+                                    <button class="follow__btn">
+                                        Follow
+                                    </button>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="more-load-wrap text-center mt-50">
+                        <a href="#" class="load-more-btn varient-2">
+                            <svg width="18" height="19" fill="none" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.775 3.61794C11.0224 3.39694 10.192 3.25244 9.27502 3.25244C5.13143 3.25244 1.77502 6.55046 1.77502 10.622C1.77502 14.702 5.13143 18 9.27502 18C13.4186 18 16.775 14.702 16.775 10.6305C16.775 9.11747 16.3079 7.70646 15.512 6.53346" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M12.848 3.82201L10.348 1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M12.8478 3.82202L9.93256 5.91303" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            View all items</a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  creators grid style end =============== -->
+
+    <!-- ===============  footer style start =============== -->
+    <div class="footer_style__one bg-body section_gap_y_top__2">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html" class="for-dark"><img src="assets/images/logo.png" alt=""></a>
+                            <a href="index.html" class="for-light"><img src="assets/images/logo-v2.png" alt=""></a>
+                        </div>
+                        <p>NFTOcean is a shared liquidity NFT market smart contract</p>
+
+
+                        <h5>Language</h5>
+                        <div class="languege__dropdown">
+                            <button>
+                               <img src="assets/images/icons/flag-us.png" alt=""> English
+                            </button>
+                            <ul class="languege__list">
+                              <li><a href="#"> <img src="assets/images/icons/flag-us.png" alt=""> English</a></li>
+                              <li><a href="#"> <img src="assets/images/icons/flag-us.png" alt=""> English</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex justify-content-lg-center">
+                    <div class="footer__widget">
+                        <h6 class="footer_widget__title">Market plac</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="author-profile.html">Profile</a></li>
+                            <li><a href="marketplace-1.html">Marketplace</a></li>
+                            <li><a href="creators.html">Creators</a></li>
+                            <li><a href="activity.html">Activity</a></li>
+                            <li><a href="collection.html">Colletctions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 d-flex justify-content-lg-center ">
+                    <div class="footer__widget">
+                        <h6 class="footer_widget__title">Company</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="create-multiple.html">Upload</a></li>
+                            <li><a href="connect-wallet.html">Connect wallet</a></li>
+                            <li><a href="blog.html">Our blog </a></li>
+                            <li><a href="nft-details.html">Item details</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer__widget newslatter__widget">
+                        <h6 class="footer_widget__title">Join Newsletter</h6>
+                        <form action="#" method="POST" id="footer_form__one">
+                            <div class="footer_newslatter__one style__two mt-2">
+                                <input type="text" placeholder="Your Email">
+                                <button type="submit"
+                                    class="form__submit submit-btn-one btn-rounded-v1">Subscribe</button>
+                            </div>
+                        </form>
+
+                        <ul class="footer_social__links style__two d-flex">
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-github"></i></a></li>
+                            <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer__copyright has-border-top">
+                <div class="col-lg-12">
+                    <p class="text-center">Copyright©2022. Created with love by <a href="#">wprealizer</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  footer style end =============== -->
+
+     <!--Custom jsvascript and Plugins -->
+
+    <!-- jquery latest -->
+    <script src="assets/js/jquery-3.6.0.min.js" ></script>
+    <!-- latest bootstarp bundle -->
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>
+    <!-- swiper bundle -->
+    <script src="assets/js/swiper-bundle.min.js" ></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js" ></script>
+    <!-- nice select -->
+    <script src="assets/js/jquery.nice-select.min.js" ></script>
+    <!-- jquery countdown -->
+    <script src="assets/js/jquery.countdown.js"  ></script>
+    <!-- dropzone js -->
+    <script src="assets/js/dropzone.min.js" ></script>
+    <!-- fancybox -->
+    <script src="assets/js/jquery.fancybox.min.js" ></script>
+    <!-- Custom JavaScript -->
+    <script async src="assets/js/main.js"></script>
+</body>
+
+</html> 

@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <title>NFTOcean - NFT Marketplace Website Template + Light & Dark</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="20x20">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="assets/css/dropzone.min.css">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- animate Css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Swiper bundle Css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body class="theme-light-active">
+
+     <!-- mobil__searchbar style -->
+     <div class="mobil__searchbar" id="mobilSearch">
+        <div class="input__wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="pb-3 d-flex align-items-center justify-content-between"><h5>What are you looking for?</h5> <span class="close__search" id="closeSearch">Close Popup</span></div>
+                        <form action="#">
+                            <div class="d-flex">
+                                <input type="text" placeholder="Search Item, Creators, Collections etc.">
+                                <button class="submit-v1 ml-2">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============  header area start =============== -->
+    <header>
+        <div class="header-area header-defult header_style__two bg-body">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-2 col-lg-3 col-md-2 col-2 align-items-center d-flex order-0">
+                        <div class="nav-logo logo-switch d-flex justify-content-between align-items-center">
+                            <a class="logo-dark" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                            <a class="logo-light" href="index.html"><img src="assets/images/logo-v2.png" alt="logo"></a>
+                        </div>
+                        <div class="nav-search-style-two w-100 d-xl-block d-none">
+                            <span class="search__icon">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.26847 16.0378C12.2827 16.0378 15.5369 12.7834 15.5369 8.7689C15.5369 4.7544 12.2827 1.5 8.26847 1.5C4.2542 1.5 1 4.7544 1 8.7689C1 12.7834 4.2542 16.0378 8.26847 16.0378Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.0002 17.5L13.4023 13.9025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                            </span>
+                            <input type="text" placeholder="Collection, item or user">
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-10 col-lg-9 d-flex justify-content-end">
+                        <nav class="main-nav mr-2">
+                            <div class="inner-logo d-xl-none text-center pt-4">
+                                <a href="#" class="for-dark"><img src="assets/images/logo.png" alt=""></a>
+                                <a href="#" class="for-light"><img src="assets/images/logo-v2.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Home</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home Style - 01</a></li>
+                                        <li><a href="index-2.html">Home Style - 02</a></li>
+                                        <li><a href="index-3.html">Home Style - 03</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Explore</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="marketplace-1.html">Marketplace - 1</a></li>
+                                        <li><a href="marketplace-2.html">Marketplace - 2</a></li>
+                                        <li><a href="auction.html">Live Auction</a></li>
+                                        <li><a href="collection.html">Collection</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Pages</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="auction.html">Live Auction</a></li>
+                                        <li><a href="collection.html">Collection</a></li>
+                                        <li><a href="activity.html">Activity</a></li>
+                                        <li><a href="connect-wallet.html">Connect Wallet</a></li>
+                                        <li><a href="nft-details.html">NFT Details</a></li>
+                                        <li><a href="author-profile.html">Author Profile</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Create</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="create.html">Create NFT</a></li>
+                                        <li><a href="create-multiple.html">Create NFT (Maltiple)</a></li>
+                                        <li><a href="create-single.html">Create NFT (Single)</a></li>
+                                        <li><a href="creators.html">Creators</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Blog</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">Blog Grid</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                            </ul>
+
+                            <div class="d-xl-none d-inline-flex flex-column gap-3 px-3 mt-4">
+                                <a href="connect-wallet.html" class="btn-pill-v1"><span>Connect Wallet</span></a>
+                            </div>
+                        </nav>
+
+                        <div class="nav-actions d-flex align-items-center">
+                           
+                            <div class="d-none d-md-block mr-2">
+                                <a href="connect-wallet.html" class="btn-pill-v1"><span>Connect Wallet</span></a>
+                            </div>
+                            <button type="button" class="nav_search__icon mr-2 d-block d-xl-none mr-2 style__two" id="navSearch">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.26847 16.0378C12.2827 16.0378 15.5369 12.7834 15.5369 8.7689C15.5369 4.7544 12.2827 1.5 8.26847 1.5C4.2542 1.5 1 4.7544 1 8.7689C1 12.7834 4.2542 16.0378 8.26847 16.0378Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M17.0002 17.5L13.4023 13.9025" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <label class="theme-switch-one style__two">
+                                <input type="checkbox" id="slider" class="slider-light check-status">
+                                <span class="slider round"></span>
+                            </label>
+                           
+                            <div class="d-flex align-items-center gap-4 ml-2">
+                                <div class="mobile-menu d-flex ">
+                                    <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
+                                        <span class="h-top"></span>
+                                        <span class="h-middle"></span>
+                                        <span class="h-bottom"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===============  header area end =============== -->
+
+    <!-- ===============  breadcrumb style start =============== -->
+    <div class="breadcrumb_style__one bg-body-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="page__title">Activity</h2>
+                    <ul class="d-flex justify-content-center page__list">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Activity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  breadcrumb style end =============== -->
+
+   <!-- ===============  activity grid style start =============== -->
+   <div class="activity_grid_style bg-body-2 section_gap_y_bottom__1">
+       <div class="container">
+        <div class="row nft_grid__header px-0 align-content-center">
+           <div class="col-lg-12">
+            <ul class="nav nav-pills pills-default" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-tab-one" data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one" aria-selected="true">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-tab-two" data-bs-toggle="pill" data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two" aria-selected="false">Art</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-tab-three" data-bs-toggle="pill" data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three" aria-selected="false">Virtual Words</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-tab-four" data-bs-toggle="pill" data-bs-target="#pills-four" type="button" role="tab" aria-controls="pills-four" aria-selected="false">Trending Cards</button>
+                </li>
+              </ul>
+           </div>
+        </div>
+        <div class="row pt-40 gy-4">
+            <div class="col-lg-7 gx-lg-5">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-tab-one">
+                        <div class="activity_card__style">
+                            <div class="activity__left">
+                                <div class="activity__avater">
+                                    <img src="assets/images/nft/nf-sm-one.png" alt="">
+                                </div>
+                            <div class="activity_card__disc">
+                                <h5 class="nft__title"><a href="#">Sound of Silence</a></h5>
+                                <p>liked by <span>@Pizza Game Chef</span></p>
+
+                                <span>3 hours ago</span>
+                            </div>
+                            </div>
+
+                            <div class="activity_status">
+                                <img src="assets/images/icons/status-heart-x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="activity_card__style mt-3">
+                            <div class="activity__left">
+                                <div class="activity__avater">
+                                    <img src="assets/images/nft/nf-sm-two.png" alt="">
+                                </div>
+                            <div class="activity_card__disc">
+                                <h5 class="nft__title"><a href="#">Abstract</a></h5>
+                                <p>started following <span>@Desmond Eagle</span></p>
+
+                                <span>2 hours ago</span>
+                            </div>
+                            </div>
+
+                            <div class="activity_status">
+                                <img src="assets/images/icons/status-tick-x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="activity_card__style mt-3">
+                            <div class="activity__left">
+                                <div class="activity__avater">
+                                    <img src="assets/images/nft/nf-sm-three.png" alt="">
+                                </div>
+                            <div class="activity_card__disc">
+                                <h5 class="nft__title"><a href="#">Deep Sea phantasy</a></h5>
+                                <p>bid cancelled by <span>@Weir</span> Doe offered <span>0.025 ETH</span></p>
+
+                                <span>1 hours ago</span>
+                            </div>
+                            </div>
+
+                            <div class="activity_status">
+                                <img src="assets/images/icons/status-bid-x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="activity_card__style mt-3">
+                            <div class="activity__left">
+                                <div class="activity__avater">
+                                    <img src="assets/images/nft/nf-sm-four.png" alt="">
+                                </div>
+                            <div class="activity_card__disc">
+                                <h5 class="nft__title"><a href="#">Modern Art Collection</a></h5>
+                                <p>1 edition purchased by <span>Eric Widget</span> for <span>0.001 ETH</span></p>
+
+                                <span>3 hours ago</span>
+                            </div>
+                            </div>
+
+                            <div class="activity_status">
+                                <img src="assets/images/icons/status-cart-x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="activity_card__style mt-3">
+                            <div class="activity__left">
+                                <div class="activity__avater">
+                                    <img src="assets/images/nft/nf-sm-five.png" alt="">
+                                </div>
+                            <div class="activity_card__disc">
+                                <h5 class="nft__title"><a href="#">Cute Astronout</a></h5>
+                                <p>listed by <span>@Norman Gordon</span></p>
+
+                                <span>12 hours ago</span>
+                            </div>
+                            </div>
+
+                            <div class="activity_status">
+                                <img src="assets/images/icons/status-pin-x.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-tab-two">
+                        <div class="activity_card__style mt-3">
+                            <div class="activity__left">
+                                <div class="activity__avater">
+                                    <img src="assets/images/nft/nf-sm-two.png" alt="">
+                                </div>
+                            <div class="activity_card__disc">
+                                <h5 class="nft__title"><a href="#">Abstract</a></h5>
+                                <p>started following <span>@Desmond Eagle</span></p>
+
+                                <span>2 hours ago</span>
+                            </div>
+                            </div>
+
+                            <div class="activity_status">
+                                <img src="assets/images/icons/status-tick-x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="activity_card__style mt-3">
+                            <div class="activity__left">
+                                <div class="activity__avater">
+                                    <img src="assets/images/nft/nf-sm-three.png" alt="">
+                                </div>
+                            <div class="activity_card__disc">
+                                <h5 class="nft__title"><a href="#">Deep Sea phantasy</a></h5>
+                                <p>bid cancelled by <span>@Weir</span> Doe offered <span>0.025 ETH</span></p>
+
+                                <span>1 hours ago</span>
+                            </div>
+                            </div>
+
+                            <div class="activity_status">
+                                <img src="assets/images/icons/status-bid-x.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-tab-three">
+                        <div class="activity_card__style">
+                            <div class="activity__left">
+                                <div class="activity__avater">
+                                    <img src="assets/images/nft/nf-sm-one.png" alt="">
+                                </div>
+                            <div class="activity_card__disc">
+                                <h5 class="nft__title"><a href="#">Sound of Silence</a></h5>
+                                <p>liked by <span>@Pizza Game Chef</span></p>
+
+                                <span>3 hours ago</span>
+                            </div>
+                            </div>
+
+                            <div class="activity_status">
+                                <img src="assets/images/icons/status-heart-x.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-tab-four">
+                        <div class="activity_card__style mt-3">
+                            <div class="activity__left">
+                                <div class="activity__avater">
+                                    <img src="assets/images/nft/nf-sm-four.png" alt="">
+                                </div>
+                            <div class="activity_card__disc">
+                                <h5 class="nft__title"><a href="#">Modern Art Collection</a></h5>
+                                <p>1 edition purchased by <span>Eric Widget</span> for <span>0.001 ETH</span></p>
+
+                                <span>3 hours ago</span>
+                            </div>
+                            </div>
+
+                            <div class="activity_status">
+                                <img src="assets/images/icons/status-cart-x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="activity_card__style mt-3">
+                            <div class="activity__left">
+                                <div class="activity__avater">
+                                    <img src="assets/images/nft/nf-sm-five.png" alt="">
+                                </div>
+                            <div class="activity_card__disc">
+                                <h5 class="nft__title"><a href="#">Cute Astronout</a></h5>
+                                <p>listed by <span>@Norman Gordon</span></p>
+
+                                <span>12 hours ago</span>
+                            </div>
+                            </div>
+
+                            <div class="activity_status">
+                                <img src="assets/images/icons/status-pin-x.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="filter__wrap px-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <h5>Filter</h5>
+                        <button>Reset filter</button>
+                    </div>
+
+                    <ul class="custom_radio__group">
+
+                        <li class="single-radio">
+                            <input type="radio" name="custom-check" id="status1" checked>
+                            <label for="status1">
+                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.639 7.14369L7.14995 11.6328C7.03365 11.7492 6.89555 11.8415 6.74354 11.9046C6.59153 11.9676 6.42859 12 6.26403 12C6.09947 12 5.93653 11.9676 5.78452 11.9046C5.63251 11.8415 5.49441 11.7492 5.37811 11.6328L0 6.2609V0H6.2609L11.639 5.37811C11.8722 5.61272 12.0031 5.93009 12.0031 6.2609C12.0031 6.59171 11.8722 6.90908 11.639 7.14369Z" fill="currentColor"/>
+                                    </svg>
+                                <span>Listings</span>
+                            </label>
+                        </li>
+                        <li class="single-radio">
+                            <input type="radio" name="custom-check" id="status2">
+                            <label for="status2">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.3427 2.14922H10.1027L8.07497 0.121484C7.91299 -0.0404948 7.64902 -0.0404948 7.48104 0.121484C7.31906 0.283464 7.31906 0.54743 7.48104 0.715408L8.91486 2.14922H3.0836L4.51742 0.715408C4.6794 0.553429 4.6794 0.289463 4.51742 0.121484C4.35544 -0.0404948 4.09148 -0.0404948 3.9235 0.121484L1.90176 2.14922H1.66179C1.12186 2.14922 0 2.14922 0 3.68503C0 4.26695 0.119985 4.6509 0.371952 4.90287C0.515934 5.05285 0.689912 5.13084 0.875888 5.17284C1.04987 5.21483 1.23584 5.22083 1.41582 5.22083H10.5826C10.7686 5.22083 10.9426 5.20883 11.1106 5.17284C11.6145 5.05285 11.9985 4.6929 11.9985 3.68503C11.9985 2.14922 10.8766 2.14922 10.3427 2.14922Z" fill="currentColor"/>
+                                    <path d="M10.23 6.00076H1.72309C1.35114 6.00076 1.06917 6.33072 1.12917 6.69667L1.6331 9.78028C1.80108 10.8121 2.25102 12 4.24877 12H7.61434C9.63608 12 9.99603 10.9861 10.212 9.85227L10.8179 6.71467C10.8899 6.34272 10.608 6.00076 10.23 6.00076ZM5.16665 9.87027C5.16665 10.1042 4.98067 10.2902 4.7527 10.2902C4.51873 10.2902 4.33276 10.1042 4.33276 9.87027V7.89052C4.33276 7.66255 4.51873 7.47057 4.7527 7.47057C4.98067 7.47057 5.16665 7.66255 5.16665 7.89052V9.87027ZM7.73432 9.87027C7.73432 10.1042 7.54834 10.2902 7.31437 10.2902C7.0864 10.2902 6.89443 10.1042 6.89443 9.87027V7.89052C6.89443 7.66255 7.0864 7.47057 7.31437 7.47057C7.54834 7.47057 7.73432 7.66255 7.73432 7.89052V9.87027Z" fill="currentColor"/>
+                                    </svg>
+                                    
+                                <span>Sales</span>
+                            </label>
+                        </li>
+                        <li class="single-radio">
+                            <input type="radio" name="custom-check" id="status3">
+                            <label for="status3">
+                                <span>Bids</span>
+                            </label>
+                        </li>
+                        <li class="single-radio">
+                            <input type="radio" name="custom-check" id="status4">
+                            <label for="status4">
+                                <span>Likes</span>
+                            </label>
+                        </li>
+                        <li class="single-radio">
+                            <input type="radio" name="custom-check" id="status5">
+                            <label for="status5">
+                                <span>Followings</span>
+                            </label>
+                        </li>
+
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+       </div>
+   </div>
+
+   <!-- ===============  activity grid style end =============== -->
+
+    <!-- ===============  footer style start =============== -->
+    <div class="footer_style__one bg-body section_gap_y_top__2">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html" class="for-dark"><img src="assets/images/logo.png" alt=""></a>
+                            <a href="index.html" class="for-light"><img src="assets/images/logo-v2.png" alt=""></a>
+                        </div>
+                        <p>NFTOcean is a shared liquidity NFT market smart contract</p>
+
+
+                        <h5>Language</h5>
+                        <div class="languege__dropdown">
+                            <button>
+                               <img src="assets/images/icons/flag-us.png" alt=""> English
+                            </button>
+                            <ul class="languege__list">
+                              <li><a href="#"> <img src="assets/images/icons/flag-us.png" alt=""> English</a></li>
+                              <li><a href="#"> <img src="assets/images/icons/flag-us.png" alt=""> English</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex justify-content-lg-center">
+                    <div class="footer__widget">
+                        <h6 class="footer_widget__title">Market plac</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="author-profile.html">Profile</a></li>
+                            <li><a href="marketplace-1.html">Marketplace</a></li>
+                            <li><a href="creators.html">Creators</a></li>
+                            <li><a href="activity.html">Activity</a></li>
+                            <li><a href="collection.html">Colletctions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 d-flex justify-content-lg-center ">
+                    <div class="footer__widget">
+                        <h6 class="footer_widget__title">Company</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="create-multiple.html">Upload</a></li>
+                            <li><a href="connect-wallet.html">Connect wallet</a></li>
+                            <li><a href="blog.html">Our blog </a></li>
+                            <li><a href="nft-details.html">Item details</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer__widget newslatter__widget">
+                        <h6 class="footer_widget__title">Join Newsletter</h6>
+                        <form action="#" method="POST" id="footer_form__one">
+                            <div class="footer_newslatter__one style__two mt-2">
+                                <input type="text" placeholder="Your Email">
+                                <button type="submit"
+                                    class="form__submit submit-btn-one btn-rounded-v1">Subscribe</button>
+                            </div>
+                        </form>
+
+                        <ul class="footer_social__links style__two d-flex">
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-github"></i></a></li>
+                            <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer__copyright has-border-top">
+                <div class="col-lg-12">
+                    <p class="text-center">Copyright©2022. Created with love by <a href="#">wprealizer</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  footer style end =============== -->
+
+     <!--Custom jsvascript and Plugins -->
+
+    <!-- jquery latest -->
+    <script src="assets/js/jquery-3.6.0.min.js" ></script>
+    <!-- latest bootstarp bundle -->
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>
+    <!-- swiper bundle -->
+    <script src="assets/js/swiper-bundle.min.js" ></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js" ></script>
+    <!-- nice select -->
+    <script src="assets/js/jquery.nice-select.min.js" ></script>
+    <!-- jquery countdown -->
+    <script src="assets/js/jquery.countdown.js"  ></script>
+    <!-- dropzone js -->
+    <script src="assets/js/dropzone.min.js" ></script>
+    <!-- fancybox -->
+    <script src="assets/js/jquery.fancybox.min.js" ></script>
+    <!-- Custom JavaScript -->
+    <script async src="assets/js/main.js"></script>
+</body>
+
+</html> 

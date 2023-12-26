@@ -1,0 +1,59 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'include/header.html' %}
+
+    <!-- ===============  breadcrumb style start =============== -->
+    <div class="breadcrumb_style__two bg-body-2">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <a href="{% url 'index' %}" class="back__btn">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 6.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 11.5L1 6.5L6 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <ul class="d-flex page__list">
+                    <!-- <li><a href="{% url 'index' %}">Home</a></li>
+                    <li>Create item</li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  breadcrumb style end =============== -->
+    
+   <!-- ===============  create style start =============== -->
+   <div class="nft_create__style bg-body-2 section_gap_y_top__2 section_gap_y_bottom__2">
+       <div class="container">
+           <div class="row justify-content-center">
+               <div class="col-lg-8 col-xl-8">
+                   <div class="create__content text-center px-xxl-5">
+                       <h2 class="inner-p-title">Наши услуги</h2>
+                   </div>
+                   <div class="row gy-4 pt-40">
+                    {% for category in categories %}
+                       <div class="col-sm-6">
+                           <div class="create_card__style">
+                               <div class="create__thumb" style="width: 450px;">
+                                   <img src="{{category.image.url}}" style="width: 80%; height: 300px; border-radius: 10%;" alt="">
+                               </div>
+                               <div class="create__disc">
+                                   <h5>{{category.title}}</h5><br>
+                                   <a href="{% url 'sub_category' %}?parent_slug={{ category.slug }}" class="create__btn">Подробнее</a>
+                               </div>
+                           </div>
+                       </div>
+                    {% endfor %}
+                   </div>
+
+                   <p class="create_bottom__text text-center">We do not own your private keys and cannot access your funds
+                    without <br> your confirmation.</p>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- ===============  create style end =============== -->
+
+   {% include 'include/footer.html' %}
+   {% endblock %}

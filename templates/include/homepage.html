@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+     <title>UPGRADE</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="{{settings.logo.url}}" type="image/gif" sizes="20x20">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="{% static 'assets/css/jquery.fancybox.min.css' %}">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="{% static 'assets/css/dropzone.min.css' %}">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap-icons.css' %}">
+    <!-- animate Css -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!-- Swiper bundle Css -->
+    <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+</head>
+
+<body class="theme-dark-active" id="activeTheme">
+    
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- jquery latest -->
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}" ></script>
+    <!-- latest bootstarp bundle -->
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}" ></script>
+    <!-- swiper bundle -->
+    <script src="{% static 'assets/js/swiper-bundle.min.js' %}" ></script>
+    <!-- wow js -->
+    <script src="{% static 'assets/js/wow.min.js' %}" ></script>
+    <!-- nice select -->
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}" ></script>
+    <!-- jquery countdown -->
+    <script src="{% static 'assets/js/jquery.countdown.js' %}"  ></script>
+    <!-- dropzone js -->
+    <script src="{% static 'assets/js/dropzone.min.js' %}" ></script>
+    <!-- fancybox -->
+    <script src="{% static 'assets/js/jquery.fancybox.min.js' %}" ></script>
+    <!-- Custom JavaScript -->
+    <script async src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <title>NFTOcean - NFT Marketplace Website Template + Light & Dark</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="20x20">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="assets/css/dropzone.min.css">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- animate Css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Swiper bundle Css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body class="theme-light-active">
+
+     <!-- mobil__searchbar style -->
+     <div class="mobil__searchbar" id="mobilSearch">
+        <div class="input__wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="pb-3 d-flex align-items-center justify-content-between"><h5>What are you looking for?</h5> <span class="close__search" id="closeSearch">Close Popup</span></div>
+                        <form action="#">
+                            <div class="d-flex">
+                                <input type="text" placeholder="Search Item, Creators, Collections etc.">
+                                <button class="submit-v1 ml-2">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============  header area start =============== -->
+    <header>
+        <div class="header-area header-defult header_style__two bg-body">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-2 col-lg-3 col-md-2 col-2 align-items-center d-flex order-0">
+                        <div class="nav-logo logo-switch d-flex justify-content-between align-items-center">
+                            <a class="logo-dark" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                            <a class="logo-light" href="index.html"><img src="assets/images/logo-v2.png" alt="logo"></a>
+                        </div>
+                        <div class="nav-search-style-two w-100 d-xl-block d-none">
+                            <span class="search__icon">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.26847 16.0378C12.2827 16.0378 15.5369 12.7834 15.5369 8.7689C15.5369 4.7544 12.2827 1.5 8.26847 1.5C4.2542 1.5 1 4.7544 1 8.7689C1 12.7834 4.2542 16.0378 8.26847 16.0378Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.0002 17.5L13.4023 13.9025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                            </span>
+                            <input type="text" placeholder="Collection, item or user">
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-10 col-lg-9 d-flex justify-content-end">
+                        <nav class="main-nav mr-2">
+                            <div class="inner-logo d-xl-none text-center pt-4">
+                                <a href="#" class="for-dark"><img src="assets/images/logo.png" alt=""></a>
+                                <a href="#" class="for-light"><img src="assets/images/logo-v2.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Home</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home Style - 01</a></li>
+                                        <li><a href="index-2.html">Home Style - 02</a></li>
+                                        <li><a href="index-3.html">Home Style - 03</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Explore</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="marketplace-1.html">Marketplace - 1</a></li>
+                                        <li><a href="marketplace-2.html">Marketplace - 2</a></li>
+                                        <li><a href="auction.html">Live Auction</a></li>
+                                        <li><a href="collection.html">Collection</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Pages</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="auction.html">Live Auction</a></li>
+                                        <li><a href="collection.html">Collection</a></li>
+                                        <li><a href="activity.html">Activity</a></li>
+                                        <li><a href="connect-wallet.html">Connect Wallet</a></li>
+                                        <li><a href="nft-details.html">NFT Details</a></li>
+                                        <li><a href="author-profile.html">Author Profile</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Create</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="create.html">Create NFT</a></li>
+                                        <li><a href="create-multiple.html">Create NFT (Maltiple)</a></li>
+                                        <li><a href="create-single.html">Create NFT (Single)</a></li>
+                                        <li><a href="creators.html">Creators</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Blog</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">Blog Grid</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                            </ul>
+
+                            <div class="d-xl-none d-inline-flex flex-column gap-3 px-3 mt-4">
+                                <a href="connect-wallet.html" class="btn-pill-v1"><span>Connect Wallet</span></a>
+                            </div>
+                        </nav>
+
+                        <div class="nav-actions d-flex align-items-center">
+                           
+                            <div class="d-none d-md-block mr-2">
+                                <a href="connect-wallet.html" class="btn-pill-v1"><span>Connect Wallet</span></a>
+                            </div>
+                            <button type="button" class="nav_search__icon mr-2 d-block d-xl-none mr-2 style__two" id="navSearch">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.26847 16.0378C12.2827 16.0378 15.5369 12.7834 15.5369 8.7689C15.5369 4.7544 12.2827 1.5 8.26847 1.5C4.2542 1.5 1 4.7544 1 8.7689C1 12.7834 4.2542 16.0378 8.26847 16.0378Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M17.0002 17.5L13.4023 13.9025" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <label class="theme-switch-one style__two">
+                                <input type="checkbox" id="slider" class="slider-light check-status">
+                                <span class="slider round"></span>
+                            </label>
+                           
+                            <div class="d-flex align-items-center gap-4 ml-2">
+                                <div class="mobile-menu d-flex ">
+                                    <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
+                                        <span class="h-top"></span>
+                                        <span class="h-middle"></span>
+                                        <span class="h-bottom"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===============  header area end =============== -->
+
+    <div class="author_profiler__wrapper bg-body-2 section_gap_y_bottom__1">
+        <div class="author_profile__cover"></div>
+        <div class="container">
+
+            <div class="author_profiler__details">
+                <div class="ap__header d-flex align-items-center justify-content-between flex-wrap gap-3">
+                    <div class="author_image">
+                        <img src="assets/images/nft/author__xxl.png" alt="">
+                    </div>
+
+                    <div class="ap_header__right">
+                        <div class="calloctors">
+                            <span>Collected by</span>
+                            <div class="avater__group">
+                                <img src="assets/images/nft/ag-one.png" alt="">
+                                <img src="assets/images/nft/ag-two.png" alt="">
+                                <img src="assets/images/nft/ag-three.png" alt="">
+                                <img src="assets/images/nft/ag-four.png" alt="">
+                            </div>
+                        </div>
+                        <button class="info__btn">
+                            <svg width="19" height="4" viewBox="0 0 19 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.4375 2.875C9.95527 2.875 10.375 2.45527 10.375 1.9375C10.375 1.41973 9.95527 1 9.4375 1C8.91973 1 8.5 1.41973 8.5 1.9375C8.5 2.45527 8.91973 2.875 9.4375 2.875Z"
+                                    fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M16.4375 2.875C16.9553 2.875 17.375 2.45527 17.375 1.9375C17.375 1.41973 16.9553 1 16.4375 1C15.9197 1 15.5 1.41973 15.5 1.9375C15.5 2.45527 15.9197 2.875 16.4375 2.875Z"
+                                    fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M2.4375 2.875C2.95527 2.875 3.375 2.45527 3.375 1.9375C3.375 1.41973 2.95527 1 2.4375 1C1.91973 1 1.5 1.41973 1.5 1.9375C1.5 2.45527 1.91973 2.875 2.4375 2.875Z"
+                                    fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-40 gy-4">
+                <div class="col-lg-3">
+                    <div class="author_detail__info">
+                        <div class="copy__bord">
+                            <span>#43463</span>
+                            <button>0xCC3C…EC00
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.80388 13.2632H3.5941C1.28115 13.2632 0 11.9967 0 9.68638V3.57677C0 1.27497 1.27255 0 3.5941 0H7.52354C9.83649 0 11.1176 1.26642 11.1176 3.57677C11.1176 3.92761 10.8253 4.21854 10.4728 4.21854C10.1202 4.21854 9.8279 3.92761 9.8279 3.57677C9.8279 1.96808 9.14003 1.28353 7.52354 1.28353H3.5941C1.97762 1.28353 1.28975 1.96808 1.28975 3.57677V9.68638C1.28975 11.2951 1.97762 11.9796 3.5941 11.9796H5.80388C6.15641 11.9796 6.44875 12.2706 6.44875 12.6214C6.44875 12.9722 6.15641 13.2632 5.80388 13.2632Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M11.8705 14H9.54195C8.17131 14 7.41211 13.1959 7.41211 11.729V7.84992C7.41211 6.38846 8.16622 5.57895 9.54195 5.57895H11.8705C13.2411 5.57895 14.0003 6.38302 14.0003 7.84992V11.729C14.0003 13.1959 13.2462 14 11.8705 14ZM9.54195 6.39389C8.58403 6.39389 8.17641 6.82852 8.17641 7.84992V11.729C8.17641 12.7504 8.58403 13.1851 9.54195 13.1851H11.8705C12.8284 13.1851 13.236 12.7504 13.236 11.729V7.84992C13.236 6.82852 12.8284 6.39389 11.8705 6.39389H9.54195Z"
+                                        fill="currentColor" stroke="currentColor" stroke-width="0.5" />
+                                </svg>
+                            </button>
+                        </div>
+
+
+                        <h3 class="author__name">Melih Polat</h3>
+                        <h6 class="author__username">@djmooney786</h6>
+
+                        <div class="followers__wrap">
+                            <div class="single__flw">
+                                <h5>174</h5>
+                                <span>Following</span>
+                            </div>
+                            <div class="single__flw">
+                                <h5>237</h5>
+                                <span>Followers</span>
+                            </div>
+                            <div class="follow__btn">
+                                <button>Follow</button>
+                            </div>
+                        </div>
+
+                        <div class="follow__avater">
+                            <h5>Followed by</h5>
+
+                            <div class="avater__group">
+                                <img src="assets/images/nft/ag-one.png" alt="">
+                                <img src="assets/images/nft/ag-two.png" alt="">
+                                <img src="assets/images/nft/ag-three.png" alt="">
+                                <img src="assets/images/nft/ag-four.png" alt="">
+                            </div>
+
+                            <div class="all__followers">
+                                <a href="#" class="view__btn">View all</a>
+                            </div>
+                        </div>
+
+                        <ul class="author_social__links">
+                            <li>
+                                <a href="#" class="social__link"><img src="assets/images/icons/twitter-color.svg" alt=""
+                                        class="social__icon"> <span>@mpmelihpolat</span> <img
+                                        src="assets/images/icons/tick-blue.svg" alt="" class="tick__icon"> </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social__link"><img src="assets/images/icons/insta-color.svg" alt=""
+                                        class="social__icon"> <span>@mpmelihpolat</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social__link"><img src="assets/images/icons/web-color.svg" alt=""
+                                        class="social__icon"> <span>Ocean.com</span></a>
+                            </li>
+                        </ul>
+
+                        <div class="join__date">
+                            <strong>Joined</strong>
+                            <span>November 2021</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="nft_grid__header row mb-40">
+                        <div class="col-lg-12">
+                            <ul class="nav nav-pills pills-default" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-tab-one" data-bs-toggle="pill"
+                                        data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
+                                        aria-selected="true">Creations 48</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-tab-two" data-bs-toggle="pill"
+                                        data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two"
+                                        aria-selected="false">Collections 24</button>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
+                            aria-labelledby="pills-tab-one">
+                            <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4">
+                                <div class="col pt-lg-0 pt-3">
+                                    <div class="auction_card_style__two">
+                                        <div class="auction_card__thumb">
+                                            <a href="nft-details.html">
+                                                <img src="assets/images/nft/auction-five.png" alt="">
+                                            </a>
+
+                                            <a href="nft-details.html" class="bid__btn">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                                Bid
+                                            </a>
+                                        </div>
+                                        <div class="nft__disc">
+                                            <a href="author-profile.html" class="nft__creator">Desmond Eagle <img
+                                                    src="assets/images/icons/tick-blue.svg" alt=""></a>
+
+                                            <div class="nft__title">
+                                                <h5><a href="nft-details.html">Abstract Painting</a></h5>
+                                                <ins class="current-price"><img
+                                                        src="assets/images/icons/tri-flash-blue.svg" alt=""> <span>0.01
+                                                        ETH</span></ins>
+                                            </div>
+
+                                            <div class="nft__bottom">
+                                                <ul class="nft__actions d-flex">
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.0732541 11.2132L6.47058 0.254439C6.65303 -0.0648577 7.10917 -0.0876645 7.32584 0.208825L9.10477 2.59215C9.61793 3.27636 9.65217 4.20003 9.20743 4.92986L5.39865 11.0307C5.02234 11.6351 4.36096 12 3.64254 12H0.518006C0.118885 11.9886 -0.132008 11.5553 0.0732541 11.2132Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M10.5415 7.55271L8.35206 11.2018C8.1468 11.5439 8.39769 11.9887 8.79681 11.9887H13.1757C13.5748 11.9887 13.8257 11.5553 13.6205 11.2018L11.431 7.55271C11.2372 7.22201 10.7468 7.22201 10.5415 7.55271Z"
+                                                                fill="currentColor" />
+                                                        </svg></li>
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92067 1.62177C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69977 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42345 10.66 7.1915 11.297 6.99824 11.3948C6.80115 11.2956 5.58162 10.6685 4.25227 9.67217C2.8336 8.60887 1.38875 7.19728 0.835985 5.63289C0.154691 3.69818 0.922552 1.34972 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                                stroke="currentColor" stroke-width="1.2" />
+                                                        </svg> <span>3</span>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="nft__countdown"><div class="count__down countdown" data-date="2022-08-13">
+                                                </div></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col pt-lg-0 pt-3">
+                                    <div class="auction_card_style__two">
+                                        <div class="auction_card__thumb">
+                                            <a href="nft-details.html">
+                                                <img src="assets/images/nft/auction-six.png" alt="">
+                                            </a>
+                                            <a href="nft-details.html" class="bid__btn">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                                Bid
+                                            </a>
+                                        </div>
+                                        <div class="nft__disc">
+                                            <a href="author-profile.html" class="nft__creator">Eric Widget <img
+                                                    src="assets/images/icons/tick-blue.svg" alt=""></a>
+
+                                            <div class="nft__title">
+                                                <h5><a href="nft-details.html">Sound of Silence</a></h5>
+                                                <ins class="current-price"><img
+                                                        src="assets/images/icons/tri-flash-blue.svg" alt=""> <span>0.76
+                                                        ETH</span></ins>
+                                            </div>
+
+                                            <div class="nft__bottom">
+                                                <ul class="nft__actions d-flex">
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.0732541 11.2132L6.47058 0.254439C6.65303 -0.0648577 7.10917 -0.0876645 7.32584 0.208825L9.10477 2.59215C9.61793 3.27636 9.65217 4.20003 9.20743 4.92986L5.39865 11.0307C5.02234 11.6351 4.36096 12 3.64254 12H0.518006C0.118885 11.9886 -0.132008 11.5553 0.0732541 11.2132Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M10.5415 7.55271L8.35206 11.2018C8.1468 11.5439 8.39769 11.9887 8.79681 11.9887H13.1757C13.5748 11.9887 13.8257 11.5553 13.6205 11.2018L11.431 7.55271C11.2372 7.22201 10.7468 7.22201 10.5415 7.55271Z"
+                                                                fill="currentColor" />
+                                                        </svg></li>
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92067 1.62177C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69977 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42345 10.66 7.1915 11.297 6.99824 11.3948C6.80115 11.2956 5.58162 10.6685 4.25227 9.67217C2.8336 8.60887 1.38875 7.19728 0.835985 5.63289C0.154691 3.69818 0.922552 1.34972 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                                stroke="currentColor" stroke-width="1.2" />
+                                                        </svg> <span>3</span>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="nft__countdown"><div class="count__down countdown" data-date="2022-11-09">
+                                                </div></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col pt-lg-0 pt-3">
+                                    <div class="auction_card_style__two">
+                                        <div class="auction_card__thumb">
+                                            <a href="nft-details.html">
+                                                <img src="assets/images/nft/auction-seven.png" alt="">
+                                            </a>
+                                            <a href="nft-details.html" class="bid__btn">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                                Bid
+                                            </a>
+                                        </div>
+                                        <div class="nft__disc">
+                                            <a href="author-profile.html" class="nft__creator">Tsuki Genesis <img
+                                                    src="assets/images/icons/tick-blue.svg" alt=""></a>
+
+                                            <div class="nft__title">
+                                                <h5><a href="nft-details.html">Geometrical Figure</a></h5>
+                                                <ins class="current-price"><img
+                                                        src="assets/images/icons/tri-flash-blue.svg" alt=""> <span>0.46
+                                                        ETH</span></ins>
+                                            </div>
+
+                                            <div class="nft__bottom">
+                                                <ul class="nft__actions d-flex">
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.0732541 11.2132L6.47058 0.254439C6.65303 -0.0648577 7.10917 -0.0876645 7.32584 0.208825L9.10477 2.59215C9.61793 3.27636 9.65217 4.20003 9.20743 4.92986L5.39865 11.0307C5.02234 11.6351 4.36096 12 3.64254 12H0.518006C0.118885 11.9886 -0.132008 11.5553 0.0732541 11.2132Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M10.5415 7.55271L8.35206 11.2018C8.1468 11.5439 8.39769 11.9887 8.79681 11.9887H13.1757C13.5748 11.9887 13.8257 11.5553 13.6205 11.2018L11.431 7.55271C11.2372 7.22201 10.7468 7.22201 10.5415 7.55271Z"
+                                                                fill="currentColor" />
+                                                        </svg></li>
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92067 1.62177C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69977 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42345 10.66 7.1915 11.297 6.99824 11.3948C6.80115 11.2956 5.58162 10.6685 4.25227 9.67217C2.8336 8.60887 1.38875 7.19728 0.835985 5.63289C0.154691 3.69818 0.922552 1.34972 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                                stroke="currentColor" stroke-width="1.2" />
+                                                        </svg> <span>3</span>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col pt-3">
+                                    <div class="auction_card_style__two">
+                                        <div class="auction_card__thumb">
+                                            <a href="nft-details.html">
+                                                <img src="assets/images/nft/auction-eight.png" alt="">
+                                            </a>
+                                            <a href="nft-details.html" class="bid__btn">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                                Bid
+                                            </a>
+                                        </div>
+                                        <div class="nft__disc">
+                                            <a href="author-profile.html" class="nft__creator">Norman Gordon <img
+                                                    src="assets/images/icons/tick-blue.svg" alt=""></a>
+
+                                            <div class="nft__title">
+                                                <h5><a href="nft-details.html">Running Puppets</a></h5>
+                                                <ins class="current-price"><img
+                                                        src="assets/images/icons/tri-flash-blue.svg" alt=""> <span>0.01
+                                                        ETH</span></ins>
+                                            </div>
+
+                                            <div class="nft__bottom">
+                                                <ul class="nft__actions d-flex">
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.0732541 11.2132L6.47058 0.254439C6.65303 -0.0648577 7.10917 -0.0876645 7.32584 0.208825L9.10477 2.59215C9.61793 3.27636 9.65217 4.20003 9.20743 4.92986L5.39865 11.0307C5.02234 11.6351 4.36096 12 3.64254 12H0.518006C0.118885 11.9886 -0.132008 11.5553 0.0732541 11.2132Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M10.5415 7.55271L8.35206 11.2018C8.1468 11.5439 8.39769 11.9887 8.79681 11.9887H13.1757C13.5748 11.9887 13.8257 11.5553 13.6205 11.2018L11.431 7.55271C11.2372 7.22201 10.7468 7.22201 10.5415 7.55271Z"
+                                                                fill="currentColor" />
+                                                        </svg></li>
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92067 1.62177C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69977 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42345 10.66 7.1915 11.297 6.99824 11.3948C6.80115 11.2956 5.58162 10.6685 4.25227 9.67217C2.8336 8.60887 1.38875 7.19728 0.835985 5.63289C0.154691 3.69818 0.922552 1.34972 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                                stroke="currentColor" stroke-width="1.2" />
+                                                        </svg> <span>3</span>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col pt-3">
+                                    <div class="auction_card_style__two">
+                                        <div class="auction_card__thumb">
+                                            <a href="nft-details.html">
+                                                <img src="assets/images/nft/auction-one.png" alt="">
+                                            </a>
+                                            <a href="nft-details.html" class="bid__btn">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                                Bid
+                                            </a>
+                                        </div>
+                                        <div class="nft__disc">
+                                            <a href="author-profile.html" class="nft__creator">Beeing Hope <img
+                                                    src="assets/images/icons/tick-blue.svg" alt=""></a>
+
+                                            <div class="nft__title">
+                                                <h5><a href="nft-details.html">Geometrical Figure</a></h5>
+                                                <ins class="current-price"><img
+                                                        src="assets/images/icons/tri-flash-blue.svg" alt=""> <span>0.01
+                                                        ETH</span></ins>
+                                            </div>
+
+                                            <div class="nft__bottom">
+                                                <ul class="nft__actions d-flex">
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.0732541 11.2132L6.47058 0.254439C6.65303 -0.0648577 7.10917 -0.0876645 7.32584 0.208825L9.10477 2.59215C9.61793 3.27636 9.65217 4.20003 9.20743 4.92986L5.39865 11.0307C5.02234 11.6351 4.36096 12 3.64254 12H0.518006C0.118885 11.9886 -0.132008 11.5553 0.0732541 11.2132Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M10.5415 7.55271L8.35206 11.2018C8.1468 11.5439 8.39769 11.9887 8.79681 11.9887H13.1757C13.5748 11.9887 13.8257 11.5553 13.6205 11.2018L11.431 7.55271C11.2372 7.22201 10.7468 7.22201 10.5415 7.55271Z"
+                                                                fill="currentColor" />
+                                                        </svg></li>
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92067 1.62177C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69977 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42345 10.66 7.1915 11.297 6.99824 11.3948C6.80115 11.2956 5.58162 10.6685 4.25227 9.67217C2.8336 8.60887 1.38875 7.19728 0.835985 5.63289C0.154691 3.69818 0.922552 1.34972 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                                stroke="currentColor" stroke-width="1.2" />
+                                                        </svg> <span>3</span>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col pt-3">
+                                    <div class="auction_card_style__two">
+                                        <div class="auction_card__thumb">
+                                            <a href="nft-details.html">
+                                                <img src="assets/images/nft/auction-two.png" alt="">
+                                            </a>
+                                            <a href="nft-details.html" class="bid__btn">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                                Bid
+                                            </a>
+                                        </div>
+                                        <div class="nft__disc">
+                                            <a href="author-profile.html" class="nft__creator">Weir Doe <img
+                                                    src="assets/images/icons/tick-blue.svg" alt=""></a>
+
+                                            <div class="nft__title">
+                                                <h5><a href="nft-details.html">Running Puppets</a></h5>
+                                                <ins class="current-price"><img
+                                                        src="assets/images/icons/tri-flash-blue.svg" alt=""> <span>0.76
+                                                        ETH</span></ins>
+                                            </div>
+
+                                            <div class="nft__bottom">
+                                                <ul class="nft__actions d-flex">
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.0732541 11.2132L6.47058 0.254439C6.65303 -0.0648577 7.10917 -0.0876645 7.32584 0.208825L9.10477 2.59215C9.61793 3.27636 9.65217 4.20003 9.20743 4.92986L5.39865 11.0307C5.02234 11.6351 4.36096 12 3.64254 12H0.518006C0.118885 11.9886 -0.132008 11.5553 0.0732541 11.2132Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M10.5415 7.55271L8.35206 11.2018C8.1468 11.5439 8.39769 11.9887 8.79681 11.9887H13.1757C13.5748 11.9887 13.8257 11.5553 13.6205 11.2018L11.431 7.55271C11.2372 7.22201 10.7468 7.22201 10.5415 7.55271Z"
+                                                                fill="currentColor" />
+                                                        </svg></li>
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92067 1.62177C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69977 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42345 10.66 7.1915 11.297 6.99824 11.3948C6.80115 11.2956 5.58162 10.6685 4.25227 9.67217C2.8336 8.60887 1.38875 7.19728 0.835985 5.63289C0.154691 3.69818 0.922552 1.34972 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                                stroke="currentColor" stroke-width="1.2" />
+                                                        </svg> <span>3</span>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-tab-two">
+                            <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4">
+
+                                <div class="col pt-lg-0 pt-3">
+                                    <div class="auction_card_style__two">
+                                        <div class="auction_card__thumb">
+                                            <a href="nft-details.html">
+                                                <img src="assets/images/nft/auction-eight.png" alt="">
+                                            </a>
+                                            <a href="nft-details.html" class="bid__btn">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                                Bid
+                                            </a>
+                                        </div>
+                                        <div class="nft__disc">
+                                            <a href="author-profile.html" class="nft__creator">Norman Gordon <img
+                                                    src="assets/images/icons/tick-blue.svg" alt=""></a>
+
+                                            <div class="nft__title">
+                                                <h5><a href="nft-details.html">Running Puppets</a></h5>
+                                                <ins class="current-price"><img
+                                                        src="assets/images/icons/tri-flash-blue.svg" alt=""> <span>0.01
+                                                        ETH</span></ins>
+                                            </div>
+
+                                            <div class="nft__bottom">
+                                                <ul class="nft__actions d-flex">
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.0732541 11.2132L6.47058 0.254439C6.65303 -0.0648577 7.10917 -0.0876645 7.32584 0.208825L9.10477 2.59215C9.61793 3.27636 9.65217 4.20003 9.20743 4.92986L5.39865 11.0307C5.02234 11.6351 4.36096 12 3.64254 12H0.518006C0.118885 11.9886 -0.132008 11.5553 0.0732541 11.2132Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M10.5415 7.55271L8.35206 11.2018C8.1468 11.5439 8.39769 11.9887 8.79681 11.9887H13.1757C13.5748 11.9887 13.8257 11.5553 13.6205 11.2018L11.431 7.55271C11.2372 7.22201 10.7468 7.22201 10.5415 7.55271Z"
+                                                                fill="currentColor" />
+                                                        </svg></li>
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92067 1.62177C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69977 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42345 10.66 7.1915 11.297 6.99824 11.3948C6.80115 11.2956 5.58162 10.6685 4.25227 9.67217C2.8336 8.60887 1.38875 7.19728 0.835985 5.63289C0.154691 3.69818 0.922552 1.34972 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                                stroke="currentColor" stroke-width="1.2" />
+                                                        </svg> <span>3</span>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col pt-lg-0 pt-3">
+                                    <div class="auction_card_style__two">
+                                        <div class="auction_card__thumb">
+                                            <a href="nft-details.html">
+                                                <img src="assets/images/nft/auction-one.png" alt="">
+                                            </a>
+                                            <a href="nft-details.html" class="bid__btn">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                                Bid
+                                            </a>
+                                        </div>
+                                        <div class="nft__disc">
+                                            <a href="author-profile.html" class="nft__creator">Beeing Hope <img
+                                                    src="assets/images/icons/tick-blue.svg" alt=""></a>
+
+                                            <div class="nft__title">
+                                                <h5><a href="nft-details.html">Geometrical Figure</a></h5>
+                                                <ins class="current-price"><img
+                                                        src="assets/images/icons/tri-flash-blue.svg" alt=""> <span>0.01
+                                                        ETH</span></ins>
+                                            </div>
+
+                                            <div class="nft__bottom">
+                                                <ul class="nft__actions d-flex">
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.0732541 11.2132L6.47058 0.254439C6.65303 -0.0648577 7.10917 -0.0876645 7.32584 0.208825L9.10477 2.59215C9.61793 3.27636 9.65217 4.20003 9.20743 4.92986L5.39865 11.0307C5.02234 11.6351 4.36096 12 3.64254 12H0.518006C0.118885 11.9886 -0.132008 11.5553 0.0732541 11.2132Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M10.5415 7.55271L8.35206 11.2018C8.1468 11.5439 8.39769 11.9887 8.79681 11.9887H13.1757C13.5748 11.9887 13.8257 11.5553 13.6205 11.2018L11.431 7.55271C11.2372 7.22201 10.7468 7.22201 10.5415 7.55271Z"
+                                                                fill="currentColor" />
+                                                        </svg></li>
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92067 1.62177C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69977 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42345 10.66 7.1915 11.297 6.99824 11.3948C6.80115 11.2956 5.58162 10.6685 4.25227 9.67217C2.8336 8.60887 1.38875 7.19728 0.835985 5.63289C0.154691 3.69818 0.922552 1.34972 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                                stroke="currentColor" stroke-width="1.2" />
+                                                        </svg> <span>3</span>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col pt-lg-0 pt-3">
+                                    <div class="auction_card_style__two">
+                                        <div class="auction_card__thumb">
+                                            <a href="nft-details.html">
+                                                <img src="assets/images/nft/auction-two.png" alt="">
+                                            </a>
+                                            <a href="nft-details.html" class="bid__btn">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                                Bid
+                                            </a>
+                                        </div>
+                                        <div class="nft__disc">
+                                            <a href="author-profile.html" class="nft__creator">Weir Doe <img
+                                                    src="assets/images/icons/tick-blue.svg" alt=""></a>
+
+                                            <div class="nft__title">
+                                                <h5><a href="nft-details.html">Running Puppets</a></h5>
+                                                <ins class="current-price"><img
+                                                        src="assets/images/icons/tri-flash-blue.svg" alt=""> <span>0.76
+                                                        ETH</span></ins>
+                                            </div>
+
+                                            <div class="nft__bottom">
+                                                <ul class="nft__actions d-flex">
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.0732541 11.2132L6.47058 0.254439C6.65303 -0.0648577 7.10917 -0.0876645 7.32584 0.208825L9.10477 2.59215C9.61793 3.27636 9.65217 4.20003 9.20743 4.92986L5.39865 11.0307C5.02234 11.6351 4.36096 12 3.64254 12H0.518006C0.118885 11.9886 -0.132008 11.5553 0.0732541 11.2132Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M10.5415 7.55271L8.35206 11.2018C8.1468 11.5439 8.39769 11.9887 8.79681 11.9887H13.1757C13.5748 11.9887 13.8257 11.5553 13.6205 11.2018L11.431 7.55271C11.2372 7.22201 10.7468 7.22201 10.5415 7.55271Z"
+                                                                fill="currentColor" />
+                                                        </svg></li>
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92067 1.62177C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69977 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42345 10.66 7.1915 11.297 6.99824 11.3948C6.80115 11.2956 5.58162 10.6685 4.25227 9.67217C2.8336 8.60887 1.38875 7.19728 0.835985 5.63289C0.154691 3.69818 0.922552 1.34972 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                                stroke="currentColor" stroke-width="1.2" />
+                                                        </svg> <span>3</span>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col pt-lg-0 pt-3">
+                                    <div class="auction_card_style__two">
+                                        <div class="auction_card__thumb">
+                                            <a href="nft-details.html">
+                                                <img src="assets/images/nft/auction-three.png" alt="">
+                                            </a>
+                                            <a href="nft-details.html" class="bid__btn">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z"
+                                                        fill="currentColor" />
+                                                </svg>
+
+                                                Bid
+                                            </a>
+                                        </div>
+                                        <div class="nft__disc">
+                                            <a href="author-profile.html" class="nft__creator">Tsuki Genesis <img
+                                                    src="assets/images/icons/tick-blue.svg" alt=""></a>
+
+                                            <div class="nft__title">
+                                                <h5><a href="nft-details.html">Abstract Painting</a></h5>
+                                                <ins class="current-price"><img
+                                                        src="assets/images/icons/tri-flash-blue.svg" alt=""> <span>0.46
+                                                        ETH</span></ins>
+                                            </div>
+
+                                            <div class="nft__bottom">
+                                                <ul class="nft__actions d-flex">
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.0732541 11.2132L6.47058 0.254439C6.65303 -0.0648577 7.10917 -0.0876645 7.32584 0.208825L9.10477 2.59215C9.61793 3.27636 9.65217 4.20003 9.20743 4.92986L5.39865 11.0307C5.02234 11.6351 4.36096 12 3.64254 12H0.518006C0.118885 11.9886 -0.132008 11.5553 0.0732541 11.2132Z"
+                                                                fill="currentColor" />
+                                                            <path
+                                                                d="M10.5415 7.55271L8.35206 11.2018C8.1468 11.5439 8.39769 11.9887 8.79681 11.9887H13.1757C13.5748 11.9887 13.8257 11.5553 13.6205 11.2018L11.431 7.55271C11.2372 7.22201 10.7468 7.22201 10.5415 7.55271Z"
+                                                                fill="currentColor" />
+                                                        </svg></li>
+                                                    <li><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92067 1.62177C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69977 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42345 10.66 7.1915 11.297 6.99824 11.3948C6.80115 11.2956 5.58162 10.6685 4.25227 9.67217C2.8336 8.60887 1.38875 7.19728 0.835985 5.63289C0.154691 3.69818 0.922552 1.34972 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                                stroke="currentColor" stroke-width="1.2" />
+                                                        </svg> <span>3</span>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="more-load-wrap text-center mt-50">
+                        <a href="#" class="load-more-btn varient-2">
+                            <svg width="18" height="19" fill="none" viewBox="0 0 18 19"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.775 3.61794C11.0224 3.39694 10.192 3.25244 9.27502 3.25244C5.13143 3.25244 1.77502 6.55046 1.77502 10.622C1.77502 14.702 5.13143 18 9.27502 18C13.4186 18 16.775 14.702 16.775 10.6305C16.775 9.11747 16.3079 7.70646 15.512 6.53346"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M12.848 3.82201L10.348 1" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M12.8478 3.82202L9.93256 5.91303" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                            View all items</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============  footer style start =============== -->
+    <div class="footer_style__one bg-body section_gap_y_top__2">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html" class="for-dark"><img src="assets/images/logo.png" alt=""></a>
+                            <a href="index.html" class="for-light"><img src="assets/images/logo-v2.png" alt=""></a>
+                        </div>
+                        <p>NFTOcean is a shared liquidity NFT market smart contract</p>
+
+
+                        <h5>Language</h5>
+                        <div class="languege__dropdown">
+                            <button>
+                               <img src="assets/images/icons/flag-us.png" alt=""> English
+                            </button>
+                            <ul class="languege__list">
+                              <li><a href="#"> <img src="assets/images/icons/flag-us.png" alt=""> English</a></li>
+                              <li><a href="#"> <img src="assets/images/icons/flag-us.png" alt=""> English</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex justify-content-lg-center">
+                    <div class="footer__widget">
+                        <h6 class="footer_widget__title">Market plac</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="author-profile.html">Profile</a></li>
+                            <li><a href="marketplace-1.html">Marketplace</a></li>
+                            <li><a href="creators.html">Creators</a></li>
+                            <li><a href="activity.html">Activity</a></li>
+                            <li><a href="collection.html">Colletctions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 d-flex justify-content-lg-center ">
+                    <div class="footer__widget">
+                        <h6 class="footer_widget__title">Company</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="create-multiple.html">Upload</a></li>
+                            <li><a href="connect-wallet.html">Connect wallet</a></li>
+                            <li><a href="blog.html">Our blog </a></li>
+                            <li><a href="nft-details.html">Item details</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer__widget newslatter__widget">
+                        <h6 class="footer_widget__title">Join Newsletter</h6>
+                        <form action="#" method="POST" id="footer_form__one">
+                            <div class="footer_newslatter__one style__two mt-2">
+                                <input type="text" placeholder="Your Email">
+                                <button type="submit"
+                                    class="form__submit submit-btn-one btn-rounded-v1">Subscribe</button>
+                            </div>
+                        </form>
+
+                        <ul class="footer_social__links style__two d-flex">
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-github"></i></a></li>
+                            <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer__copyright has-border-top">
+                <div class="col-lg-12">
+                    <p class="text-center">Copyright©2022. Created with love by <a href="#">wprealizer</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  footer style end =============== -->
+
+     <!--Custom jsvascript and Plugins -->
+
+    <!-- jquery latest -->
+    <script src="assets/js/jquery-3.6.0.min.js" ></script>
+    <!-- latest bootstarp bundle -->
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>
+    <!-- swiper bundle -->
+    <script src="assets/js/swiper-bundle.min.js" ></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js" ></script>
+    <!-- nice select -->
+    <script src="assets/js/jquery.nice-select.min.js" ></script>
+    <!-- jquery countdown -->
+    <script src="assets/js/jquery.countdown.js"  ></script>
+    <!-- dropzone js -->
+    <script src="assets/js/dropzone.min.js" ></script>
+    <!-- fancybox -->
+    <script src="assets/js/jquery.fancybox.min.js" ></script>
+    <!-- Custom JavaScript -->
+    <script async src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>

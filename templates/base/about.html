@@ -1,0 +1,170 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'include/header.html' %}
+
+    <!-- ===============  about style area start=============== -->
+    <div class="about__header section_gap_y_top__1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_header__content">
+                        <h2>{{about.title}}</h2>
+                        <p>{{about.descriptions|safe}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-60">
+                <div class="about_video__wrap">
+                    <div class="video__thumb">
+                        <img src="{{about.image.url}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- succes counter wrap -->
+    <div class="success_counter__style bg-body-2 section_gap_y_top__3 section_gap_y_bottom__2">
+        <div class="container">
+            <div class="counter_card__wrap d-flex flex-wrap justify-content-center align-items-center gap-3">
+                <div class="single_counter__box">
+                    <span> {{data.clients_title}}</span>
+                    <h2>{{data.clients}}</h2>
+                </div>
+                <div class="single_counter__box">
+                    <span> {{data.employees_title}}</span>
+                    <h2>{{data.employees}}</h2>
+                </div>
+                <div class="single_counter__box">
+                    <span>{{data.orders_title}}</span>
+                    <h2>{{data.orders}}</h2>
+                </div>
+                <div class="single_counter__box">
+                    <span>{{data.products_title}}</span>
+                    <h2>{{data.products}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- company mission wrap -->
+    <div class="mission__style section_gap_y_bottom__2 bg-body-2">
+        <div class="container">
+            <div class="row gy-4 align-items-center justify-content-center gx-lg-5">
+                <div class="col-lg-6">
+                    <div class="mission__illustration text-lg-end">
+                        <img src="{{about.image_2.url}}" style="border-radius: 10%;" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="mission__contents">
+                        <h2 class="mission__title"><span>О нас</span>{{about.title_2}}</h2>
+                        <p class="disc-text">{{about.descriptions_2|safe}}</p>
+
+                        <a href="{% url 'contact' %}" class="btn-rounded-v5"><span>Напишите нам</span> <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 6.49988H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 1.49988L11 6.49988L6 11.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- crew style wrap -->
+    <div class="crew_style__start bg-body-2 section_gap_y_top__3">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-5 text-center">
+                    <h2 class="inner-p-title">Наша команда</h2>
+                    <p class="disc-text-2 pt-1">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 gy-4 pt-50">
+                {% for team in team %}
+                <div class="col">
+                    <div class="crew_card_style__one">
+                        <div class="crew__image">
+                            <img src="{{team.image.url}}" style="border-radius: 10%; width: 100%; height: 100%;" alt="">
+                        </div>
+                        <div class="crew__disc">
+                            <h5 class="crew__title">{{team.name}}</h5>
+                            <span>{{team.job}}</span>
+                            <ul class="crew__social">
+                                {% if team.instagram %}
+                                <li><a href="{{team.instagram}}"><i class="bi bi-instagram"></i></a></li>
+                                {% endif %}
+                                {% if team.whatsapp %}
+                                <li><a href="{{team.whatsapp}}"><i class="bi bi-whatsapp"></i></a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+     <!-- support style start -->
+     <div class="support__style bg-body-2 section_gap_y_top__3 section_gap_y_bottom__1">
+         <div class="container">
+             <div class="row justify-content-center">
+                 <div class="col-lg-6 text-center">
+                     <h4 class="support__title">Все еще есть вопросы? <br>
+                        Мы здесь, чтобы помочь.</h4>
+                    
+                 </div>
+             </div>
+
+             <div class="row gy-4 pt-50">
+                 <div class="col-lg-4 col-md-6">
+                    <div  class="support_card__style">
+                        <div class="support__icon">
+                            <a href="tel:{{settings.phone}}"><img src="{% static 'assets/images/icons/helpman-3d.png' %}" alt=""></a>
+                        </div>
+                        <a href="tel:{{settings.phone}}"><div class="support__disc">
+                            <h5>Позвоните нам</h5>
+                            <p>{{settings.phone}}</p>
+                        </div></a>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6">
+                    <div class="support_card__style">
+                        <div class="support__icon">
+                            <a href="https://wa.me/{{settings.phone}}/?text=Здравствуйте, "><img src="{% static 'assets/images/icons/chat-3d.png' %}" alt=""></a>
+                        </div>
+                        <a href="https://wa.me/{{settings.phone}}/?text=Здравствуйте, "><div class="support__disc">
+                            <h5>Напишите на наш Whatsapp</h5>
+                            <p>{{settings.phone}}</p>
+                        </div></a>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6">
+                    <div class="support_card__style">
+                        <div class="support__icon">
+                            <a href="mailto:{{settings.email}}"><img src="{% static 'assets/images/icons/mail-3d.png' %}" alt=""></a>
+                        </div>
+                        <a href="mailto:{{settings.email}}"><div class="support__disc">
+                            <h5>Напишите на нашу почту</h5>
+                            <p>{{settings.email}}</p>
+                        </div></a>
+                    </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+    <!-- ===============  about style area start=============== -->
+  
+    {% include 'include/footer.html' %}
+    {% endblock %}

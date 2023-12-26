@@ -1,0 +1,61 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'include/header.html' %}
+
+    <!-- ===============  breadcrumb style start =============== -->
+    <div class="breadcrumb_style__one bg-body-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="page__title">Marketplace</h2>
+                    <ul class="d-flex justify-content-center page__list">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Marketplace</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  breadcrumb style end =============== -->
+
+    <!-- ===============  marketplace style start =============== -->
+    <div class="marketplace_style_one bg-body-2 section_gap_y_bottom__1 overflow-hidden">
+        <div class="container">
+            <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 pt-40">
+                {% for category in subcategories %}
+                <div class="col pt-3">
+                    <div class="auction_card_style__two">
+                        <div class="auction_card__thumb">
+                            <a href="{% url 'category_detail' category.slug %}">
+                                <img src="{{category.image.url}}" alt="">
+                            </a>
+                            <a href="{% url 'category_detail' category.slug %}" class="bid__btn">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.34865 0.671187C6.24866 -0.251818 4.60869 -0.10834 3.68569 0.991654L1.72805 3.32468C0.805041 4.42467 0.94852 6.06464 2.04851 6.98764L3.02566 7.80757L0.920733 10.3161C0.395084 10.9426 0.476795 11.8765 1.10324 12.4022C1.72968 12.9278 2.66364 12.8461 3.18929 12.2197L5.29422 9.71111L6.36918 10.6131C7.46917 11.5361 9.10914 11.3926 10.0321 10.2926L11.9898 7.95962C12.9128 6.85962 12.7693 5.21966 11.6693 4.29665L7.34865 0.671187ZM4.60494 1.763C5.10194 1.1707 5.985 1.09344 6.5773 1.59044L6.6648 1.66385L2.96539 6.07264C2.9456 6.09622 2.92823 6.12102 2.91324 6.14674L2.81986 6.06839C2.22755 5.57139 2.1503 4.68833 2.6473 4.09602L4.60494 1.763ZM3.71104 6.81618L6.28054 8.97225L10.038 4.4943L7.47438 2.34317L3.77497 6.75195C3.75518 6.77554 3.73377 6.79695 3.71104 6.81618ZM7.14052 9.69386L7.09012 9.65156L10.8476 5.17362L10.898 5.21591C11.4903 5.71291 11.5675 6.59597 11.0705 7.18827L9.11289 9.5213C8.61589 10.1136 7.73283 10.1909 7.14052 9.69386ZM1.83999 11.0875L3.71871 8.8485L4.14876 9.20935L2.27003 11.4483C2.17039 11.5671 1.99334 11.5826 1.87458 11.4829C1.75583 11.3833 1.74034 11.2062 1.83999 11.0875Z" fill="currentColor"/>
+                                    </svg>
+                                    
+                                 Подробнее
+                            </a>
+                        </div>
+                        <div class="nft__disc">
+
+                            <div class="nft__title">
+                                <h5><a href="{% url 'category_detail' category.slug %}">{{category.title}}</a></h5>
+                                <ins class="current-price"><img src="{% static 'quiz/assets/images/icons/tri-flash-blue.svg' %}" alt="">    </ins>
+                            </div>
+
+                            <div class="nft__bottom">
+                          </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- ===============  marketplace style end =============== -->
+
+    {% include 'include/footer.html' %}
+    {% endblock %}

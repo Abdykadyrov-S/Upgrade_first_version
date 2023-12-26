@@ -1,0 +1,72 @@
+{% load static %}
+    <!-- ===============  footer style start =============== -->
+    <div class="footer_style__one bg-body-2 varient-2 section_gap_y_top__1">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="{% url 'index' %}" class="for-dark"><img src="{{settings.logo_dark.url}}" style="width: 125px; height: 80px;" alt=""></a>
+                            <a href="{% url 'index' %}" class="for-light"><img src="{{settings.logo_light.url}}" style="width: 125px; height: 80px;" alt=""></a>
+                        </div>
+                        <h3 style="color: white;"><span style="color: rgb(0, 142, 181);">UP</span>GRADE</h3>
+                        <p>Эволюция технологий с нами: компьютерные решения и видеонаблюдение на высшем уровне!</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex justify-content-lg-center">
+                    <div class="footer__widget varient-2">
+                        <h6 class="footer_widget__title">Все страницы</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="{% url 'index' %}">Главная страница</a></li>
+                            <li><a href="{% url 'about' %}">О нас</a></li>
+                            <li><a href="{% url 'news' %}">Новости и статьи </a></li>
+                            <li><a href="{% url 'category' %}">Наши услуги</a></li>
+                            <li><a href="{% url 'contact' %}">Связаться с нами</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 d-flex justify-content-lg-center ">
+                    <div class="footer__widget varient-2">
+                        <h6 class="footer_widget__title">Наши услуги</h6>
+
+                        <ul class="footer_widget__links">
+                            {% for category in footer_categories %}
+                            <li><a href="{% url 'sub_category' %}?parent_slug={{ category.slug }}">{{category.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer__widget newslatter__widget">
+                        <h6 class="footer_widget__title">Наши соц. сети</h6>
+
+                        <ul class="footer_social__links d-flex style__three">
+                            {% if settings.twitter %}
+                            <li><a href="{{settings.twitter}}"><i class="bi bi-twitter"></i></a></li>
+                            {% endif %}
+                            {% if settings.instagram %}
+                            <li><a href="{{settings.instagram}}"><i class="bi bi-instagram"></i></a></li>
+                            {% endif %}
+                            {% if settings.facebook %}
+                            <li><a href="{{settings.facebook}}"><i class="bi bi-facebook"></i></a></li>
+                            {% endif %}
+                            {% if settings.telegram %}
+                            <li><a href="{{settings.telegram}}"><i class="bi bi-telegram"></i></a></li>
+                            {% endif %}
+                            {% if settings.phone %}
+                            <li><a href="https://wa.me/{{settings.phone}}/?text=Здравствуйте, "><i class="bi bi-whatsapp"></i></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer__copyright has-border-top varient-2">
+                <div class="col-lg-12">
+                    <p class="text-center">© Copyright 2023. <a href="https://t.me/Abdykadyrov_S">Сделано командой Codex-studio</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  footer style end =============== -->

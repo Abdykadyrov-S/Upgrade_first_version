@@ -1,0 +1,445 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'include/header.html' %}
+
+
+    <!-- ===============  hero one style start =============== -->
+    <div class="hero_style__three section_gap_y_bottom__1 position-relative">
+        <img src="{% static 'assets/images/shapes/hero-shape-three.png' %}" alt="" class="d-lg-block d-none hero_bg__shape blend-overlay position-absolute top-0 end-0 z-neg-1">
+        <img src="{% static 'assets/images/shapes/hero-star.svg' %}" alt="" class="hero_star__shape position-absolute start-0 top-50">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-7">
+                    <div class="hero__content">
+                        <h1 class="text__outlined">{{settings.title}}</h1>
+                        <h1 class="text__gradient">{{settings.description}}</h1>
+
+                        <div class="hero__actions">
+                            <!-- <a href="#" class="btn-rounded-v2">Explore NFTs</a> -->
+                            <a href="{% url 'contact' %}" class="btn-rounded-v3 varient-2">Связаться с нами</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block text-lg-end">
+                    <div class="hero__featured">
+                        <img src="{{settings.image.url}}" alt="">
+                        <!-- <img src="{% static 'assets/images/hero/hero-batch.png' %}" alt="" class="hero__batch"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  hero one style end =============== -->
+
+
+    <!-- ===============  collection style start =============== -->
+    <div class="collection_style__three bg-body section_gap_y_bottom__1 position-relative z-1">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-lg-6">
+                    <h2 class="section_title__2">Наши услуги</h2>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-lg-end align-items-center">
+                    <div class="slider__nav d-flex mr-3">
+                        <div class="collection__three_prev navigation_btn_2 btn__prev mr-1">
+                            <i class="bi bi-chevron-left"></i>
+                        </div>
+                        <div class="collection__three_next navigation_btn_2 btn__next">
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                    <a href="{% url 'category' %}" class="btn-rounded-v3">Все услуги <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25 6H11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.25 1L11.25 6L6.25 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="swiper collection_slider__two pt-40">
+                <div class="swiper-wrapper">
+                    {% for category in footer_categories %}
+                    <div class="swiper-slide">
+                        <div class="collection_card_style__two">
+                            <div class="collection_card__thumb">
+                                <img src="{{category.image.url}}" style="height: 200px;" alt="">
+                            </div>
+                            <div class="collection_card__overlay">
+                                <a href="{% url 'sub_category' %}?parent_slug={{ category.slug }}" class="collection_btn">{{category.title}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  collection style end =============== -->
+    
+    <!-- ===============  nft grid style start =============== -->
+    <div class="nft_grid_style__three bg-body section_gap_y_bottom__1">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-xl-2 col-lg-3 d-flex justify-content-between ">
+                    <div class="nft_grid__title">
+                        <h2 class="section_title__2" style="width: 100%;">Наши услуги и Продажа компьютерного оборудования</h2>
+                        <!-- <span class="sub-header-2"></span> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-content pt-50" id="pills-tabContent">               
+                <div class="tab-pane fade show active" id="nft_tab_1" role="tabpanel" aria-labelledby="nft_pill_1">
+                   <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-4">
+                        {% for product in all_products %}
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="{% url 'product_detail' product.id %}">
+                                            <img src="{{ product.image.url}}" alt="">
+                                        </a>
+                                    </div>
+        
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="{% url 'product_detail' product.id %}">{{ product.title }}</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> {{ product.price }} сом</ins>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-11-09">
+                                        </div>
+                                        <a href="{% url 'product_detail' product.id %}" class="bid-btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  nft grid style end =============== -->
+    
+    <!-- ===============  artist style start =============== -->
+    <!-- <div class="artists_style__one bg-body section_gap_y_bottom__1">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-lg-6">
+                    <h2 class="section_title__2">Featured Artists</h2>
+                    <p class="disc-text pt-2">Most popular gaming digital nft market place</p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-lg-end align-items-center">
+                    <div class="slider__nav d-flex mr-3">
+                        <div class="artist__prev navigation_btn_2 btn__prev mr-1">
+                            <i class="bi bi-chevron-left"></i>
+                        </div>
+                        <div class="artist__next navigation_btn_2 btn__next">
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                    <a href="creators.html" class="btn-rounded-v3">View all <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25 6H11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.25 1L11.25 6L6.25 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="row pt-50">
+                <div class="swiper artist_slider__one">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-one.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-one.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-two.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-two.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-three.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-three.png' %}" alt="">
+                                    </div>
+                                    
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-four.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-four.png' %}" alt="">
+                                    </div>
+                                   
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-five.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-five.png' %}" alt="">
+                                    </div>
+                                    
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-six.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-six.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div> -->
+    <!-- ===============  artist style end =============== -->
+
+    <!-- ===============  community style start =============== -->
+    <div class="community_style_one section_gap_y_bottom__1 section_gap_y_top__1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="section_title__2">Следите за нами</h2>
+                    <p class="disc-text pt-2">Мы активно выкладываем свои услуги, отзывы, акции и спец. предложения на наших социальных сетях</p>
+
+                        <ul class="community_social__links d-flex flex-wrap justify-content-center">
+                            {% if settings.twitter %}
+                            <li><a href="{{settings.twitter}}"><i class="bi bi-twitter"></i></a></li>
+                            {% endif %}
+                            {% if settings.instagram %}
+                            <li><a href="{{settings.instagram}}"><i class="bi bi-instagram"></i></a></li>
+                            {% endif %}
+                            {% if settings.facebook %}
+                            <li><a href="{{settings.facebook}}"><i class="bi bi-facebook"></i></a></li>
+                            {% endif %}
+                            {% if settings.telegram %}
+                            <li><a href="{{settings.telegram}}"><i class="bi bi-telegram"></i></a></li>
+                            {% endif %}
+                            {% if settings.phone %}
+                            <li><a href="https://wa.me/{{settings.phone}}/?text=Здравствуйте, "><i class="bi bi-whatsapp"></i></a></li>
+                            {% endif %}
+                        </ul>
+                </div>
+            </div>
+
+            <div class="row section_gap_y_top__1 nft_process__wrap justify-content-center gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nft_process__card">
+                        <div class="process__icon">
+                            <img src="{% static 'assets/images/icons/process-card.svg' %}" alt="">
+                        </div>
+                        <h5>Отзывы</h5>
+                        <p>Все отзывы от наших клиентов выкладываем на наши соц. сети</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nft_process__card">
+                        <div class="process__icon">
+                            <img src="{% static 'assets/images/icons/process-sell.svg' %}" alt="">
+                        </div>
+                        <h5>Акции</h5>
+                        <p>Следите за свежими акциями и специальными предложениями</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nft_process__card">
+                        <div class="process__icon">
+                            <img src="{% static 'assets/images/icons/process-add.svg' %}" alt="">
+                        </div>
+                        <h5>Выезд специалиста</h5>
+                        <p>Позовите специалиста к себе домой или на офис</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  community style end =============== -->
+
+    <!-- ===============  blog style start =============== -->
+    <div class="blog_style__one bg-body section_gap_y_bottom__1">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-md-7">
+                    <span class="sub-header-2">Most Popular</span>
+                    <h2 class="section_title__2">Popular Collections</h2>
+                </div>
+                <div class="col-md-5 text-md-end">
+                    <a href="#" class="btn-rounded-v3">View all post</a>
+                </div>
+            </div>
+
+            <div class="row pt-50">
+                <div class="col-lg-12">
+                    <div class="blog_card_style__one">
+                        <div class="blog__body">
+                            <div class="blog_thumb">
+                                <img src="{% static 'assets/images/blog/b-one.png' %}" alt="">
+                            </div>
+                            <div class="blog_disc">
+                                <ul class="blog_meta">
+                                    <li class="blog__tag"> <a href="blog.html">COLUMNS</a> </li>
+                                    <li class="blog__writer"><a href="#">By Jolene Creighton</a></li>
+                                    <li class="blog__date">Jun 14 2022</li>
+                                </ul>
+                                <h5 class="blog__title"><a href="blog-details.html">Lucien Smith Aims to Cultivate
+                                        Emerging Artists Through New SEEDS NFT Project</a></h5>
+                            </div>
+                        </div>
+                        <a class="blog__btn" href="blog-details.html">
+                            <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 12.9658L5.59317 8.37172C6.13561 7.82916 6.13561 6.94135 5.59317 6.39879L1 1.80469"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="blog_card_style__one">
+                        <div class="blog__body">
+                            <div class="blog_thumb">
+                                <img src="{% static 'assets/images/blog/b-two.png' %}" alt="">
+                            </div>
+                            <div class="blog_disc">
+                                <ul class="blog_meta">
+                                    <li class="blog__tag"> <a href="blog.html">COLUMNS</a> </li>
+                                    <li class="blog__writer"><a href="#">By Jolene Creighton</a></li>
+                                    <li class="blog__date">Jun 14 2022</li>
+                                </ul>
+                                <h5 class="blog__title"><a href="blog-details.html">“Clock” NFT Sells for $52.7M to Help
+                                        Fund Julian Assange’s Legal Defense</a></h5>
+                            </div>
+                        </div>
+                        <a class="blog__btn" href="blog-details.html">
+                            <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 12.9658L5.59317 8.37172C6.13561 7.82916 6.13561 6.94135 5.59317 6.39879L1 1.80469"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="blog_card_style__one mb-0">
+                        <div class="blog__body">
+                            <div class="blog_thumb">
+                                <img src="{% static 'assets/images/blog/b-three.png' %}" alt="">
+                            </div>
+                            <div class="blog_disc">
+                                <ul class="blog_meta">
+                                    <li class="blog__tag"> <a href="blog.html">COLUMNS</a> </li>
+                                    <li class="blog__writer"><a href="#">By Jolene Creighton</a></li>
+                                    <li class="blog__date">Jun 14 2022</li>
+                                </ul>
+                                <h5 class="blog__title"><a href="blog-details.html">Behind The Drop: The Making of
+                                        Joshua Davis’
+                                        The VO1D</a></h5>
+                            </div>
+                        </div>
+                        <a class="blog__btn" href="blog-details.html">
+                            <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 12.9658L5.59317 8.37172C6.13561 7.82916 6.13561 6.94135 5.59317 6.39879L1 1.80469"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  blog style end =============== -->
+    
+
+
+     {% include 'include/footer.html' %}
+     {% endblock %}
