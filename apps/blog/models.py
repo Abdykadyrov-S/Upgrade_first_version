@@ -1,5 +1,7 @@
 from django.db import models
 from django_resized.forms import ResizedImageField
+from ckeditor.fields import RichTextField
+
 
 # Create your models here.
 class News(models.Model):
@@ -7,8 +9,11 @@ class News(models.Model):
         max_length=255,
         verbose_name="Заголовок новости"
     )
-    descriptions = models.TextField(
-        verbose_name="Описание новости"
+    description_2 = models.TextField(
+        verbose_name="короткое описание новости"
+    )
+    description = RichTextField(
+        verbose_name="Описание"
     )
     image = ResizedImageField(
         force_format="WEBP",

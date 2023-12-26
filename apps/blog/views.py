@@ -17,6 +17,7 @@ def news_detail(request,id):
     settings = Settings.objects.latest('id')
     about = About.objects.latest('id')
     news_others = News.objects.all().order_by('?')[:1]
+    news_others_2 = News.objects.all().order_by('?')[:1]
     latest_new = News.objects.latest('id')
     news = News.objects.get(id=id)
     footer_categories = Category.objects.filter(parent=None).order_by("?")

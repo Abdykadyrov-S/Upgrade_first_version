@@ -29,72 +29,15 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5 col-lg-6 text-center">
-                    <h2 class="contact__title"><span>Hi,🖐 We are</span> NFTOcean</h2>
-                    <p class="disc-text-2 pt-2">We’re here to help and answer any question you might have.We look forward to hearing from you 🙂</p>
-                </div>
-            </div>
-            
-            <div class="row pt-50 gy-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="contact_card__style">
-                        <div class="contact__icon">
-                            <img src="{% static 'assets/images/icons/3d-phone.svg' %}" alt="">
-                        </div>
-                        <div class="contact__disc">
-                            <h5>Toll Free: <a href="tel:012345678910">+0123 4567 8910</a> <br>
-                                International: <a href="tel:012345678910">+0123 4567 8910</a></h5>
-                            
-                                <a href="tel:012345678910" class="btn-pill-outlined">Call Us
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 6.49988H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M6 1.49988L11 6.49988L6 11.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 ">
-                    <div class="contact_card__style">
-                        <div class="contact__icon">
-                            <img src="{% static 'assets/images/icons/3d-support.svg' %}" alt="">
-                        </div>
-                        <div class="contact__disc">
-                            <h5>Online and always available, we’re
-                                here to answer your questions 24/7</h5>
-                            
-                                <a href="tel:012345678910" class="btn-pill-outlined">Contact Support
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 6.49988H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M6 1.49988L11 6.49988L6 11.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="contact_card__style">
-                        <div class="contact__icon">
-                            <img src="{% static 'assets/images/icons/3d-mail.svg' %}" alt="">
-                        </div>
-                        <div class="contact__disc">
-                            <h5>Email us, 24/7, we’re alweys <br>
-                                responding</h5>
-                            
-                                <a href="#" class="btn-pill-outlined">Contact Support
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 6.49988H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M6 1.49988L11 6.49988L6 11.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                </a>
-                        </div>
-                    </div>
+                    <h2 class="contact__title">Привет,🖐 </h2>
+                    <p class="disc-text-2 pt-2">Оставьте свои данные и в скором времени мы с вами свяжемся</p>
                 </div>
             </div>
 
             <div class="contact_form__wrap section_gap_y_top__3 section_gap_y_bottom__3"> 
                 <div class="row">
                     <div class="col-lg-4 h-100 d-none d-lg-block">
-                        <img src="{% static 'assets/images/others/contact-form-img.png' %}" alt="" >
+                        <img src="{{about.image.url}}" style="border-radius: 14px;" alt="" >
                     </div>
                     <div class="col-lg-8">
                         <div class="contact_form__outer">
@@ -104,42 +47,42 @@
                                     <div class="col-lg-6 pt-20">
                                         <div class="custom_input__style">
                                             <label for="name">ФИО</label>
-                                            <input name="name" type="text" id="name" placeholder="Enter your name">
+                                            <input name="name" type="text" id="name" placeholder="Введите свое имя">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 pt-20">
                                         <div class="custom_input__style">
                                             <label for="name">Email</label>
-                                            <input name="email" type="email" id="email" placeholder="Enter your email">
+                                            <input name="email" type="email" id="email" placeholder="Введите свою почту">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 pt-20">
                                         <div class="custom_input__style">
                                             <label for="name">Номер телефона</label>
-                                            <input name="phone" type="text" id="email" placeholder="Enter your email">
+                                            <input name="phone" type="text" id="email" placeholder="Введите свой номер телефона">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 pt-20">
                                         <div class="custom_input__style">
                                             <label for="name">Причина обращения</label>
-                                            <input name="cause" type="text" id="email" placeholder="Enter your email">
+                                            <input name="cause" type="text" id="email" placeholder="Введите по какой причине обращаетесь">
                                         </div>
                                     </div>
     
                                     <div class="col-lg-12 pt-20">
                                         <div class="custom_input__style">
                                             <label for="massege">Текст</label>
-                                            <textarea name="message" id="massege" cols="30" rows="5" placeholder="Write a Message"></textarea>
+                                            <textarea name="message" id="massege" cols="30" rows="5" placeholder="Введите текст"></textarea>
                                         </div>
                                     </div>
     
                                     <div class="condition">
-                                        <input type="checkbox"  id="condition">
-                                        <label for="condition">Allow to all tearms & condition</label>
+                                        {% comment %} <input type="checkbox"  id="condition">
+                                        <label for="condition">Allow to all tearms & condition</label> {% endcomment %}
                                     </div>
 
                                    <div class="submit__btn">
-                                    <button type="submit" class="submit-v1">Send Message</button>
+                                    <button type="submit" class="submit-v1">Отправить</button>
                                    </div>
     
                                 </div>
@@ -149,61 +92,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="contact_cards__style bg-body-3 section_gap_y_top__2 section_gap_y_bottom__1">
-             <div class="container">
-                 <div class="row justify-content-center">
-                     <div class="col-lg-6 text-center">
-                        <h2 class="contact__title">We 're here for you</h2>
-                        <p class="disc-text-2 pt-2">We are located in <strong>3 offices</strong></p>
-                     </div>
-                 </div>
-                 <div class="row pt-50 gy-4">
-                     <div class="col-lg-4 col-md-6 ">
-                         <div class="contact_card_style__two">
-                            <div class="card__top">
-                                <h3>London</h3>
-                                <p>Wework mansion house.
-                                   34 Queen street, albaqueki state</p>
-                                <p class="office__location">United Kingdom</p>
-                            </div>
-                            <div class="card__bottom" >
-                                <a target="_blank" href="https://www.google.com/maps/place/Mirpur+DOHS+Shopping+Complex/@23.8380008,90.3731895,17z/data=!3m1!4b1!4m5!3m4!1s0x3755c6b4dace62ed:0xc742e878029e533b!8m2!3d23.8379959!4d90.3753782" class="map__link">View on Map</a>
-                                <a href="/cdn-cgi/l/email-protection#f7999183b79894929699d994989a" class="office__mail"><span class="__cf_email__" data-cfemail="8ee0e8facee1edebefe0a0ede1e3">[email&#160;protected]</span></a>
-                            </div>
-                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6">
-                         <div class="contact_card_style__two">
-                            <div class="card__top">
-                                <h3>New York</h3>
-                                <p>Higson Ln, Melbourne boz sok.
-                                    No: 18/2 3445 Istanbul</p>
-                                <p class="office__location">United State</p>
-                            </div>
-                            <div class="card__bottom" >
-                                <a target="_blank" href="https://www.google.com/maps/place/Mirpur+DOHS+Shopping+Complex/@23.8380008,90.3731895,17z/data=!3m1!4b1!4m5!3m4!1s0x3755c6b4dace62ed:0xc742e878029e533b!8m2!3d23.8379959!4d90.3753782" class="map__link">View on Map</a>
-                                <a href="/cdn-cgi/l/email-protection#f9979f8db9969a9c9897d79a9694" class="office__mail"><span class="__cf_email__" data-cfemail="422c2436022d2127232c6c212d2f">[email&#160;protected]</span></a>
-                            </div>
-                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 ">
-                         <div class="contact_card_style__two">
-                            <div class="card__top">
-                                <h3>Dubai</h3>
-                                <p>Higson Ln, Melbourne boz sok.
-                                    No: 18/2 3445 Istanbul</p>
-                                <p class="office__location">United Arab Emirates</p>
-                            </div>
-                            <div class="card__bottom" >
-                                <a target="_blank" href="https://www.google.com/maps/place/Mirpur+DOHS+Shopping+Complex/@23.8380008,90.3731895,17z/data=!3m1!4b1!4m5!3m4!1s0x3755c6b4dace62ed:0xc742e878029e533b!8m2!3d23.8379959!4d90.3753782" class="map__link">View on Map</a>
-                                <a href="/cdn-cgi/l/email-protection#7b151d0f3b14181e1a1555181416" class="office__mail"><span class="__cf_email__" data-cfemail="d9b7bfad99b6babcb8b7f7bab6b4">[email&#160;protected]</span></a>
-                            </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
         </div>
     </div>
      <!-- =============== contact wrapper end =============== -->

@@ -1,13 +1,9 @@
 from django.contrib import admin
-from .models import Category, Product, Characteristic, ImagesProduct
+from .models import Category, Product, Characteristic
 
 
 class CharacteristicInline(admin.TabularInline):
     model = Characteristic
-    extra = 1
-
-class ImagesProductInline(admin.TabularInline):
-    model = ImagesProduct
     extra = 1
 
 class CategoryInline(admin.TabularInline):
@@ -21,7 +17,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ('title', 'price', 'created', 'display_categories')
     list_filter = ('category', 'created')
     search_fields = ('title', 'category__title')
-    inlines = [CategoryInline, ImagesProductInline, CharacteristicInline]
+    inlines = [CategoryInline, CharacteristicInline]
     exclude = ('category',)
     
 

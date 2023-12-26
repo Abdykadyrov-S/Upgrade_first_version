@@ -100,21 +100,3 @@ class Characteristic(models.Model):
         verbose_name = "Характеристика"
         verbose_name_plural = "Характеристики"
 
-class ImagesProduct(models.Model):
-    product = models.ForeignKey(
-        Product, on_delete=models.CASCADE,
-        related_name="images_product",
-        verbose_name="Товар"
-    )
-    image_2 = models.ImageField(
-        max_length=1000,
-        upload_to='product/',
-        verbose_name="Фотография продукта",
-        default='no_image.jpg'
-    )
-    def __str__(self):
-        return f"Фотографии продукта {self.product}"
-
-    class Meta:
-        verbose_name = "Фотография продукта"
-        verbose_name_plural = "Фотографии продуктов"

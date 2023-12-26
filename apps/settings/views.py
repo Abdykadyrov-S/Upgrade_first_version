@@ -16,8 +16,8 @@ def index(request):
     products = Product.objects.all().order_by('?')
     popular_products = Product.objects.all().order_by('?')[:8]
     featured_products = Product.objects.all().order_by('?')[:4]
-    news = News.objects.all().order_by('?')[:6]
-    all_products = Product.objects.all().order_by('?')
+    news = News.objects.all().order_by('?')[:4]
+    all_products = Product.objects.all().order_by('?')[:8]
     return render(request, "base/index.html",locals())
 
 def about(request):
